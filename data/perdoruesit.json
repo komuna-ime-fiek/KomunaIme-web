@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "shenim": "Llogaritë demo. Fjalëkalimet nuk ruhen: ruhet vetëm hash-i PBKDF2-SHA256 (100.000 iteracione) me kripë. Fjalëkalimet për prezantim janë te README.md."
+  },
+  "perdoruesit": [
+    {
+      "id": "u-qytetar",
+      "emri": "Qytetari Demo",
+      "email": "qytetar@komunaime.test",
+      "roli": "qytetar",
+      "lagje_id": "dardania",
+      "kripa": "63d53cb1b6fd43b071c4dc718b64f674",
+      "hash_fjalekalimi": "98833d72fdb20f9712ad331eea2502fcee2eccec053bcabb2f58df8100cb2418",
+      "krijuar": "2026-11-01T08:00:00.000Z"
+    },
+    {
+      "id": "u-zyrtar",
+      "emri": "Zyrtarja Demo",
+      "email": "zyrtar@komunaime.test",
+      "roli": "zyrtar",
+      "lagje_id": "ulpiana",
+      "kripa": "66d1f8bda663fed01da2f17d9cbbd2c0",
+      "hash_fjalekalimi": "e9378fa5ab3a06a2abc257958c39ccf9d49a3f4174dcdcef8c0f8479b4c7d5fa",
+      "krijuar": "2026-11-01T08:00:00.000Z",
+      "drejtoria_id": "urbanizmi"
+    },
+    {
+      "id": "u-drejtues",
+      "emri": "Drejtuesi Demo",
+      "email": "drejtues@komunaime.test",
+      "roli": "drejtues",
+      "lagje_id": "qendra",
+      "kripa": "2211d51ef95afe882e6d7e48033d8c28",
+      "hash_fjalekalimi": "1a24ed8906da0c3ee441f174914c346a6a919d24ef73e8283d234d4fbc592f72",
+      "krijuar": "2026-11-01T08:00:00.000Z"
+    }
+  ]
+}

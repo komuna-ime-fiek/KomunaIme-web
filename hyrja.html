@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hyr ose regjistrohu | Komuna Ime</title>
+  <meta name="description" content="Hyr ose krijo llogari në Komuna Ime për të rezervuar termine, për të marrë njoftime për lëndët dhe për të votuar.">
+  <meta name="author" content="Ekipi Komuna Ime – FIEK">
+  <meta name="theme-color" content="#1f4e8c">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-faqja="hyrja">
+  <a href="#main" class="skip-link">Kalo te përmbajtja</a>
+
+  <header class="koka">
+    <div class="kontejner koka__brenda">
+      <a class="logo" href="index.html">
+        <img src="img/logo.svg" alt="" width="32" height="32">
+        <span>Komuna Ime</span>
+      </a>
+      <button class="menu-butoni" type="button" aria-expanded="false" aria-controls="menuja">
+        <span class="menu-ikona" aria-hidden="true"></span>
+        <span class="sr-only">Hap menynë</span>
+      </button>
+      <nav id="menuja" class="menuja" aria-label="Navigimi kryesor">
+        <ul>
+          <li><a href="index.html">Ballina</a></li>
+          <li><a href="termini.html">Termini</a></li>
+          <li><a href="lenda.html">Gjurmo lëndën</a></li>
+          <li><a href="buxheti.html">Zëri i Lagjes</a></li>
+          <li data-shfaq-per="zyrtar drejtues" hidden><a href="paneli-zyrtarit.html">Paneli</a></li>
+        </ul>
+        <div id="llogaria" class="llogaria">
+          <a class="butoni butoni--dyte butoni--vogel" href="hyrja.html">Hyr</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="faqja-koka">
+      <div class="kontejner">
+        <span class="mbikalimi">Llogaria</span>
+        <h1 id="titulli-faqes">Hyr në Komuna Ime</h1>
+        <p>Me llogari rezervon termine, merr njoftime për lëndët e tua dhe voton për lagjen.</p>
+      </div>
+    </div>
+
+    <div class="kontejner seksion">
+      <div id="mesazhi-qasjes" class="kutia-info kutia-info--paralajmerim" role="alert" hidden>
+        <p><strong>Kjo faqe kërkon llogari zyrtari ose drejtuesi.</strong> Hyr me llogarinë e duhur për të vazhduar.</p>
+      </div>
+
+      <section id="hyrja" aria-label="Hyrja dhe regjistrimi">
+        <div class="hyrja-faqja">
+          <div class="karta">
+            <div class="tabet" role="tablist" aria-label="Hyr ose regjistrohu">
+              <button type="button" role="tab" id="tab-hyr" aria-selected="true" aria-controls="panel-hyr">Hyr</button>
+              <button type="button" role="tab" id="tab-regjistrohu" aria-selected="false" aria-controls="panel-regjistrohu" tabindex="-1">Regjistrohu</button>
+            </div>
+
+            <div id="panel-hyr" role="tabpanel" aria-labelledby="tab-hyr">
+              <form id="forma-hyrja" class="forma" action="#" method="post">
+                <div class="fusha">
+                  <label for="hyrja-email">Email</label>
+                  <input type="email" id="hyrja-email" name="email" autocomplete="username" required>
+                </div>
+                <div class="fusha">
+                  <label for="hyrja-fjalekalimi">Fjalëkalimi</label>
+                  <input type="password" id="hyrja-fjalekalimi" name="fjalekalimi" autocomplete="current-password" required>
+                </div>
+                <button type="submit" class="butoni butoni--plot butoni--madh">Hyr</button>
+              </form>
+            </div>
+
+            <div id="panel-regjistrohu" role="tabpanel" aria-labelledby="tab-regjistrohu" hidden>
+              <form id="forma-regjistrohu" class="forma" action="#" method="post">
+                <div class="fusha">
+                  <label for="regjistrohu-emri">Emri dhe mbiemri</label>
+                  <input type="text" id="regjistrohu-emri" name="emri" autocomplete="name" minlength="3" required>
+                </div>
+                <div class="fusha">
+                  <label for="regjistrohu-email">Email</label>
+                  <input type="email" id="regjistrohu-email" name="email" autocomplete="email" required>
+                </div>
+                <div class="fusha">
+                  <label for="regjistrohu-lagja">Lagja ku jeton</label>
+                  <select id="regjistrohu-lagja" name="lagje_id" required>
+                    <option value="">Zgjidh lagjen…</option>
+                  </select>
+                </div>
+                <div class="rreshti-fushash">
+                  <div class="fusha">
+                    <label for="regjistrohu-fjalekalimi">Fjalëkalimi</label>
+                    <input type="password" id="regjistrohu-fjalekalimi" name="fjalekalimi" autocomplete="new-password" minlength="8" required aria-describedby="regjistrohu-fjalekalimi-ndihme">
+                    <p id="regjistrohu-fjalekalimi-ndihme" class="fusha__ndihme">Së paku 8 karaktere dhe një numër.</p>
+                  </div>
+                  <div class="fusha">
+                    <label for="regjistrohu-konfirmimi">Përsërite fjalëkalimin</label>
+                    <input type="password" id="regjistrohu-konfirmimi" name="konfirmimi" autocomplete="new-password" required>
+                  </div>
+                </div>
+                <div class="fusha fusha--kutia">
+                  <input type="checkbox" id="regjistrohu-kushtet" name="kushtet" required>
+                  <label for="regjistrohu-kushtet">E kuptoj që ky është prototip studentor dhe të dhënat ruhen vetëm në këtë browser.</label>
+                </div>
+                <button type="submit" class="butoni butoni--plot butoni--madh">Krijo llogarinë</button>
+              </form>
+            </div>
+          </div>
+
+          <aside class="karta" aria-labelledby="demo-titulli">
+            <h2 id="demo-titulli">Llogaritë demo</h2>
+            <p>Për prezantim, plotëso formën me një nga llogaritë e gatshme:</p>
+            <div class="llogarite-demo">
+              <button type="button" class="butoni butoni--dyte" data-demo="qytetar"><span>Qytetar</span><small>qytetar@komunaime.test</small></button>
+              <button type="button" class="butoni butoni--dyte" data-demo="zyrtar"><span>Zyrtar</span><small>zyrtar@komunaime.test</small></button>
+              <button type="button" class="butoni butoni--dyte" data-demo="drejtues"><span>Drejtues</span><small>drejtues@komunaime.test</small></button>
+            </div>
+            <div class="kutia-info">
+              <p>Fjalëkalimi nuk ruhet askund: ruhet vetëm hash-i i tij (PBKDF2 me Web Crypto). Të dhënat mbeten vetëm në këtë browser.</p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="llogaria-ime" aria-label="Llogaria ime" hidden>
+        <div class="hyrja-faqja">
+          <div class="karta">
+            <h2>Të dhënat e mia</h2>
+            <dl class="te-dhenat">
+              <dt>Emri</dt>
+              <dd id="llogaria-emri">—</dd>
+              <dt>Email</dt>
+              <dd id="llogaria-email">—</dd>
+              <dt>Roli</dt>
+              <dd id="llogaria-roli">—</dd>
+              <dt>Lagja</dt>
+              <dd id="llogaria-lagja">—</dd>
+              <dt>Anëtar që nga</dt>
+              <dd id="llogaria-anetaresuar">—</dd>
+            </dl>
+            <div class="veprimet-e-formes">
+              <a id="llogaria-paneli" class="butoni" href="paneli-zyrtarit.html" hidden>Hap panelin</a>
+              <button type="button" class="butoni butoni--dyte" data-dil>Dil nga llogaria</button>
+            </div>
+          </div>
+          <div class="karta">
+            <h2>Njoftimet</h2>
+            <ul id="lista-njoftimeve" class="lista-njoftimeve" aria-live="polite"></ul>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="kemba">
+    <div class="kontejner">
+      <div class="kemba__grid">
+        <section aria-labelledby="kemba-rreth">
+          <h2 id="kemba-rreth">Rreth projektit</h2>
+          <p>Platformë 3-në-1 për marrëdhënien e qytetarit me komunën: termini, gjurmimi i lëndës dhe buxheti pjesëmarrës.</p>
+        </section>
+        <nav aria-labelledby="kemba-modulet">
+          <h2 id="kemba-modulet">Modulet</h2>
+          <ul>
+            <li><a href="termini.html">Rezervo terminin</a></li>
+            <li><a href="lenda.html">Gjurmo lëndën</a></li>
+            <li><a href="buxheti.html">Zëri i Lagjes</a></li>
+          </ul>
+        </nav>
+        <section aria-labelledby="kemba-projekti">
+          <h2 id="kemba-projekti">Projekti</h2>
+          <ul>
+            <li>Programimi në Ueb nga ana e Klientit</li>
+            <li>FIEK · Universiteti i Prishtinës</li>
+            <li><a href="hyrja.html">Hyr ose regjistrohu</a></li>
+          </ul>
+        </section>
+      </div>
+      <p class="kemba__fundi">© <span data-viti>2026</span> Ekipi Komuna Ime · Projekt studentor. Të dhënat e termineve dhe të lëndëve janë fiktive; buxheti është nga burime publike të Komunës së Prishtinës.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.7.1.min.js"><\/script>');</script>
+  <script src="js/storage.js"></script>
+  <script src="js/forma.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/llogaria.js"></script>
+</body>
+</html>

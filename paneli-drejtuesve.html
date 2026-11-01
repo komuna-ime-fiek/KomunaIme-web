@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paneli i drejtuesve | Komuna Ime</title>
+  <meta name="description" content="Paneli i drejtuesve të komunës: indeksi i performancës, vonesat sipas drejtorive dhe pjesëmarrja e qytetarëve.">
+  <meta name="author" content="Ekipi Komuna Ime – FIEK">
+  <meta name="theme-color" content="#1f4e8c">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-faqja="paneli-drejtuesve" data-mbrojtur="drejtues">
+  <a href="#main" class="skip-link">Kalo te përmbajtja</a>
+
+  <header class="koka">
+    <div class="kontejner koka__brenda">
+      <a class="logo" href="index.html">
+        <img src="img/logo.svg" alt="" width="32" height="32">
+        <span>Komuna Ime</span>
+      </a>
+      <button class="menu-butoni" type="button" aria-expanded="false" aria-controls="menuja">
+        <span class="menu-ikona" aria-hidden="true"></span>
+        <span class="sr-only">Hap menynë</span>
+      </button>
+      <nav id="menuja" class="menuja" aria-label="Navigimi kryesor">
+        <ul>
+          <li><a href="index.html">Ballina</a></li>
+          <li><a href="termini.html">Termini</a></li>
+          <li><a href="lenda.html">Gjurmo lëndën</a></li>
+          <li><a href="buxheti.html">Zëri i Lagjes</a></li>
+          <li data-shfaq-per="zyrtar drejtues" hidden><a href="paneli-zyrtarit.html" aria-current="true">Paneli</a></li>
+        </ul>
+        <div id="llogaria" class="llogaria">
+          <a class="butoni butoni--dyte butoni--vogel" href="hyrja.html">Hyr</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <nav class="nen-navigimi" aria-label="Panelet e komunës">
+    <div class="kontejner">
+      <ul>
+        <li><a href="paneli-zyrtarit.html">Paneli i zyrtarit</a></li>
+        <li data-shfaq-per="drejtues" hidden><a href="paneli-drejtuesve.html" aria-current="page">Paneli i drejtuesve</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main">
+    <div class="faqja-koka">
+      <div class="kontejner">
+        <span class="mbikalimi">Paneli</span>
+        <h1 id="titulli-faqes">Paneli i drejtuesve</h1>
+        <p>Indeksi i performancës së komunës: koha e pritjes, lëndët brenda afatit, pjesëmarrja në votim dhe projektet e realizuara.</p>
+      </div>
+    </div>
+
+    <div class="kontejner seksion">
+      <section aria-labelledby="indeksi">
+        <h2 id="indeksi">Indeksi i performancës</h2>
+        <div class="treguesit">
+          <div class="treguesi">
+            <span class="treguesi__vlera" id="indeksi-pritja">—</span>
+            <span class="treguesi__emri">Koha mesatare e pritjes</span>
+          </div>
+          <div class="treguesi">
+            <span class="treguesi__vlera" id="indeksi-afati">—</span>
+            <span class="treguesi__emri">Lëndë brenda afatit</span>
+          </div>
+          <div class="treguesi">
+            <span class="treguesi__vlera" id="indeksi-pjesemarrja">—</span>
+            <span class="treguesi__emri">Pjesëmarrja në votim</span>
+          </div>
+          <div class="treguesi">
+            <span class="treguesi__vlera" id="indeksi-realizuara">—</span>
+            <span class="treguesi__emri">Projekte të realizuara</span>
+          </div>
+        </div>
+        <p class="fusha__ndihme">Treguesit llogariten nga të dhënat e tri moduleve në Fazën 4 (Integrimi).</p>
+      </section>
+
+      <section class="seksion" aria-labelledby="vonesat">
+        <h2 id="vonesat">Vonesat sipas drejtorive</h2>
+        <div class="tabela-mbajtesi">
+          <table>
+            <caption>Lëndët me vonesë</caption>
+            <thead>
+              <tr>
+              <th scope="col">Drejtoria</th>
+              <th scope="col">Lëndë aktive</th>
+              <th scope="col">Me vonesë</th>
+              <th scope="col">Vonesa mesatare</th>
+              </tr>
+            </thead>
+            <tbody id="drejtuesi-tabela-vonesat">
+              <tr><td colspan="4" class="bosh">Statistikat sipas drejtorive vijnë në Fazën 3.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="karta" aria-labelledby="demo">
+        <h2 id="demo">Të dhënat demo</h2>
+        <p>Fshin terminet, lëndët, votat dhe llogaritë e reja nga ky browser, dhe i rikthen të dhënat fillestare. Përdoret para prezantimit.</p>
+        <button type="button" class="butoni butoni--rrezik" data-rivendos>Rivendos të dhënat demo</button>
+      </section>
+    </div>
+  </main>
+
+  <footer class="kemba">
+    <div class="kontejner">
+      <div class="kemba__grid">
+        <section aria-labelledby="kemba-rreth">
+          <h2 id="kemba-rreth">Rreth projektit</h2>
+          <p>Platformë 3-në-1 për marrëdhënien e qytetarit me komunën: termini, gjurmimi i lëndës dhe buxheti pjesëmarrës.</p>
+        </section>
+        <nav aria-labelledby="kemba-modulet">
+          <h2 id="kemba-modulet">Modulet</h2>
+          <ul>
+            <li><a href="termini.html">Rezervo terminin</a></li>
+            <li><a href="lenda.html">Gjurmo lëndën</a></li>
+            <li><a href="buxheti.html">Zëri i Lagjes</a></li>
+          </ul>
+        </nav>
+        <section aria-labelledby="kemba-projekti">
+          <h2 id="kemba-projekti">Projekti</h2>
+          <ul>
+            <li>Programimi në Ueb nga ana e Klientit</li>
+            <li>FIEK · Universiteti i Prishtinës</li>
+            <li><a href="hyrja.html">Hyr ose regjistrohu</a></li>
+          </ul>
+        </section>
+      </div>
+      <p class="kemba__fundi">© <span data-viti>2026</span> Ekipi Komuna Ime · Projekt studentor. Të dhënat e termineve dhe të lëndëve janë fiktive; buxheti është nga burime publike të Komunës së Prishtinës.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.7.1.min.js"><\/script>');</script>
+  <script src="js/storage.js"></script>
+  <script src="js/ui.js"></script>
+</body>
+</html>
