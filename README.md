@@ -15,10 +15,10 @@ Mësimdhënëse: Prof. Ass. Dr. Dhuratë Hyseni dhe Ass. MSc. Ariana Kadriu.
 
 | Anëtari | Emri | Përgjegjësia | Faqet dhe skedarët kryesorë |
 | --- | --- | --- | --- |
-| 1 | _[Emri Mbiemri]_ | Termini dhe dizajni | `index`, `termini`, `radha`, `css/style.css`, `img/`, `js/ui.js`, `js/termini.js`, `data/sherbimet.json` |
-| 2 (Lead) | _[Emri Mbiemri]_ | Lënda dhe bërthama | `lenda`, `hyrja`, panelet, `js/storage.js`, `js/forma.js`, `js/llogaria.js`, `js/lenda.js`, `data/perdoruesit.json` |
-| 3 | _[Emri Mbiemri]_ | Zëri: buxheti dhe propozimet | `buxheti`, `harta`, `propozo`, `realizimi`, `js/zeri.js`, `js/harta.js`, `data/buxheti.json`, `data/lagjet.json` |
-| 4 | _[Emri Mbiemri]_ | Zëri: votimi dhe algoritmet | `voto`, `rezultatet`, `js/voto.js`, `js/algoritmet.js`, `data/propozimet.json` |
+| 1 | Yll Jakupi | Termini dhe dizajni | `index`, `termini`, `radha`, `css/style.css`, `img/`, `js/ui.js`, `js/termini.js`, `data/sherbimet.json` |
+| 2 (Lead) | Rines Kastrati | Lënda dhe bërthama | `lenda`, `hyrja`, panelet, `js/storage.js`, `js/forma.js`, `js/llogaria.js`, `js/lenda.js`, `data/perdoruesit.json` |
+| 3 | Era Aliu | Zëri: buxheti dhe propozimet | `buxheti`, `harta`, `propozo`, `realizimi`, `js/zeri.js`, `js/harta.js`, `data/buxheti.json`, `data/lagjet.json` |
+| 4 | Erblina Krasniqi | Zëri: votimi dhe algoritmet | `voto`, `rezultatet`, `js/voto.js`, `js/algoritmet.js`, `data/propozimet.json` |
 
 ## Si hapet projekti
 
