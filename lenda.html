@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gjurmo lëndën | Komuna Ime</title>
+  <meta name="description" content="Gjurmo kërkesën tënde në komunë me kodin e gjurmimit: statusi, drejtoria, historia dhe afati ligjor.">
+  <meta name="author" content="Ekipi Komuna Ime – FIEK">
+  <meta name="theme-color" content="#1f4e8c">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-faqja="lenda">
+  <a href="#main" class="skip-link">Kalo te përmbajtja</a>
+
+  <header class="koka">
+    <div class="kontejner koka__brenda">
+      <a class="logo" href="index.html">
+        <img src="img/logo.svg" alt="" width="32" height="32">
+        <span>Komuna Ime</span>
+      </a>
+      <button class="menu-butoni" type="button" aria-expanded="false" aria-controls="menuja">
+        <span class="menu-ikona" aria-hidden="true"></span>
+        <span class="sr-only">Hap menynë</span>
+      </button>
+      <nav id="menuja" class="menuja" aria-label="Navigimi kryesor">
+        <ul>
+          <li><a href="index.html">Ballina</a></li>
+          <li><a href="termini.html">Termini</a></li>
+          <li><a href="lenda.html" aria-current="page">Gjurmo lëndën</a></li>
+          <li><a href="buxheti.html">Zëri i Lagjes</a></li>
+          <li data-shfaq-per="zyrtar drejtues" hidden><a href="paneli-zyrtarit.html">Paneli</a></li>
+        </ul>
+        <div id="llogaria" class="llogaria">
+          <a class="butoni butoni--dyte butoni--vogel" href="hyrja.html">Hyr</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="faqja-koka">
+      <div class="kontejner">
+        <span class="mbikalimi">Ku është lënda ime?</span>
+        <h1 id="titulli-faqes">Gjurmo lëndën</h1>
+        <p>Shkruaj kodin që more kur e dorëzove kërkesën. Shiko statusin, drejtorinë dhe sa ditë kanë mbetur nga afati ligjor.</p>
+      </div>
+    </div>
+
+    <div class="kontejner seksion">
+      <div class="dy-kolona">
+        <form id="forma-lenda" class="forma" action="#" method="get" role="search" aria-label="Gjurmo lëndën me kod">
+          <fieldset>
+            <legend>Kodi i gjurmimit</legend>
+            <div class="fusha">
+              <label for="lenda-kodi">Kodi</label>
+              <input type="text" id="lenda-kodi" name="kodi" placeholder="KI-2026-000123" pattern="KI-[0-9]{4}-[0-9]{6}" autocomplete="off" spellcheck="false" required aria-describedby="lenda-kodi-ndihme">
+              <p id="lenda-kodi-ndihme" class="fusha__ndihme">Formati: KI, viti dhe gjashtë shifra.</p>
+            </div>
+            <div class="veprimet-e-formes">
+              <button type="submit" class="butoni" disabled>Gjurmo</button>
+              <span class="fusha__ndihme">Kërkimi aktivizohet në Fazën 2.</span>
+            </div>
+          </fieldset>
+        </form>
+        <div class="ne-ndertim">
+          <span class="ne-ndertim__faza">Faza 2</span>
+          <h3>Karta e statusit</h3>
+          <p>Pas kërkimit shfaqen drejtoria, ditët e pritjes, afati ligjor si numërim mbrapsht dhe vija kohore e çdo hapi.</p>
+        </div>
+      </div>
+    </div>
+
+    <section class="seksion seksion--i-bardhe" aria-labelledby="cikli">
+      <div class="kontejner">
+        <h2 id="cikli">Cikli i një lënde</h2>
+        <p>Lënda kalon vetëm nëpër këto hapa. Çdo kalim ruhet me datën, orën dhe zyrtarin që e bëri.</p>
+        <ol class="cikli">
+          <li>Dorëzuar</li>
+          <li>Në shqyrtim</li>
+          <li>Kërkohen plotësime</li>
+          <li>Vendim</li>
+          <li>Mbyllur</li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="kemba">
+    <div class="kontejner">
+      <div class="kemba__grid">
+        <section aria-labelledby="kemba-rreth">
+          <h2 id="kemba-rreth">Rreth projektit</h2>
+          <p>Platformë 3-në-1 për marrëdhënien e qytetarit me komunën: termini, gjurmimi i lëndës dhe buxheti pjesëmarrës.</p>
+        </section>
+        <nav aria-labelledby="kemba-modulet">
+          <h2 id="kemba-modulet">Modulet</h2>
+          <ul>
+            <li><a href="termini.html">Rezervo terminin</a></li>
+            <li><a href="lenda.html">Gjurmo lëndën</a></li>
+            <li><a href="buxheti.html">Zëri i Lagjes</a></li>
+          </ul>
+        </nav>
+        <section aria-labelledby="kemba-projekti">
+          <h2 id="kemba-projekti">Projekti</h2>
+          <ul>
+            <li>Programimi në Ueb nga ana e Klientit</li>
+            <li>FIEK · Universiteti i Prishtinës</li>
+            <li><a href="hyrja.html">Hyr ose regjistrohu</a></li>
+          </ul>
+        </section>
+      </div>
+      <p class="kemba__fundi">© <span data-viti>2026</span> Ekipi Komuna Ime · Projekt studentor. Të dhënat e termineve dhe të lëndëve janë fiktive; buxheti është nga burime publike të Komunës së Prishtinës.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.7.1.min.js"><\/script>');</script>
+  <script src="js/storage.js"></script>
+  <script src="js/forma.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/lenda.js"></script>
+</body>
+</html>

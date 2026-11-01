@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paneli i zyrtarit | Komuna Ime</title>
+  <meta name="description" content="Paneli i zyrtarit të komunës: radha e ditës, lëndët e caktuara dhe vlerësimi i propozimeve të qytetarëve.">
+  <meta name="author" content="Ekipi Komuna Ime – FIEK">
+  <meta name="theme-color" content="#1f4e8c">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-faqja="paneli-zyrtarit" data-mbrojtur="zyrtar drejtues">
+  <a href="#main" class="skip-link">Kalo te përmbajtja</a>
+
+  <header class="koka">
+    <div class="kontejner koka__brenda">
+      <a class="logo" href="index.html">
+        <img src="img/logo.svg" alt="" width="32" height="32">
+        <span>Komuna Ime</span>
+      </a>
+      <button class="menu-butoni" type="button" aria-expanded="false" aria-controls="menuja">
+        <span class="menu-ikona" aria-hidden="true"></span>
+        <span class="sr-only">Hap menynë</span>
+      </button>
+      <nav id="menuja" class="menuja" aria-label="Navigimi kryesor">
+        <ul>
+          <li><a href="index.html">Ballina</a></li>
+          <li><a href="termini.html">Termini</a></li>
+          <li><a href="lenda.html">Gjurmo lëndën</a></li>
+          <li><a href="buxheti.html">Zëri i Lagjes</a></li>
+          <li data-shfaq-per="zyrtar drejtues" hidden><a href="paneli-zyrtarit.html" aria-current="page">Paneli</a></li>
+        </ul>
+        <div id="llogaria" class="llogaria">
+          <a class="butoni butoni--dyte butoni--vogel" href="hyrja.html">Hyr</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <nav class="nen-navigimi" aria-label="Panelet e komunës">
+    <div class="kontejner">
+      <ul>
+        <li><a href="paneli-zyrtarit.html" aria-current="page">Paneli i zyrtarit</a></li>
+        <li data-shfaq-per="drejtues" hidden><a href="paneli-drejtuesve.html">Paneli i drejtuesve</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main">
+    <div class="faqja-koka">
+      <div class="kontejner">
+        <span class="mbikalimi">Paneli</span>
+        <h1 id="titulli-faqes">Paneli i zyrtarit</h1>
+        <p>Radha e ditës, lëndët që të janë caktuar dhe propozimet që presin vlerësim.</p>
+      </div>
+    </div>
+
+    <div class="kontejner seksion">
+      <section aria-labelledby="zyrtari-sot">
+        <h2 id="zyrtari-sot" class="sr-only">Përmbledhja e ditës</h2>
+        <div class="treguesit">
+          <div class="treguesi">
+            <span class="treguesi__vlera" id="zyrtari-terminet">—</span>
+            <span class="treguesi__emri">Termine sot</span>
+          </div>
+          <div class="treguesi">
+            <span class="treguesi__vlera" id="zyrtari-lendet">—</span>
+            <span class="treguesi__emri">Lëndë të caktuara</span>
+          </div>
+          <div class="treguesi">
+            <span class="treguesi__vlera" id="zyrtari-propozimet">—</span>
+            <span class="treguesi__emri">Propozime për vlerësim</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="seksion" aria-labelledby="zyrtari-radha">
+        <h2 id="zyrtari-radha">Radha e ditës</h2>
+        <div class="tabela-mbajtesi">
+          <table>
+            <caption>Terminet e sotme</caption>
+            <thead>
+              <tr>
+              <th scope="col">Numri</th>
+              <th scope="col">Qytetari</th>
+              <th scope="col">Shërbimi</th>
+              <th scope="col">Ora</th>
+              <th scope="col">Veprimi</th>
+              </tr>
+            </thead>
+            <tbody id="zyrtari-tabela-radha">
+              <tr><td colspan="5" class="bosh">Thirrja e numrit tjetër vjen në Fazën 2.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section aria-labelledby="zyrtari-lendet-titulli">
+        <h2 id="zyrtari-lendet-titulli">Lëndët e caktuara</h2>
+        <div class="tabela-mbajtesi">
+          <table>
+            <caption>Lëndët sipas afatit</caption>
+            <thead>
+              <tr>
+              <th scope="col">Kodi</th>
+              <th scope="col">Lloji</th>
+              <th scope="col">Dorëzuar</th>
+              <th scope="col">Afati</th>
+              <th scope="col">Statusi</th>
+              <th scope="col">Veprimi</th>
+              </tr>
+            </thead>
+            <tbody id="zyrtari-tabela-lendet">
+              <tr><td colspan="6" class="bosh">Lëndët dhe kalimet e statusit vijnë në Fazën 2.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="seksion" aria-labelledby="zyrtari-propozimet-titulli">
+        <h2 id="zyrtari-propozimet-titulli">Vlerësimi i propozimeve</h2>
+        <div class="tabela-mbajtesi">
+          <table>
+            <caption>Propozimet që presin vlerësim</caption>
+            <thead>
+              <tr>
+              <th scope="col">Titulli</th>
+              <th scope="col">Lagja</th>
+              <th scope="col">Kostoja</th>
+              <th scope="col">Statusi</th>
+              <th scope="col">Veprimi</th>
+              </tr>
+            </thead>
+            <tbody id="zyrtari-tabela-propozimet">
+              <tr><td colspan="5" class="bosh">Vlerësimi i propozimeve vjen në Fazën 2.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="kemba">
+    <div class="kontejner">
+      <div class="kemba__grid">
+        <section aria-labelledby="kemba-rreth">
+          <h2 id="kemba-rreth">Rreth projektit</h2>
+          <p>Platformë 3-në-1 për marrëdhënien e qytetarit me komunën: termini, gjurmimi i lëndës dhe buxheti pjesëmarrës.</p>
+        </section>
+        <nav aria-labelledby="kemba-modulet">
+          <h2 id="kemba-modulet">Modulet</h2>
+          <ul>
+            <li><a href="termini.html">Rezervo terminin</a></li>
+            <li><a href="lenda.html">Gjurmo lëndën</a></li>
+            <li><a href="buxheti.html">Zëri i Lagjes</a></li>
+          </ul>
+        </nav>
+        <section aria-labelledby="kemba-projekti">
+          <h2 id="kemba-projekti">Projekti</h2>
+          <ul>
+            <li>Programimi në Ueb nga ana e Klientit</li>
+            <li>FIEK · Universiteti i Prishtinës</li>
+            <li><a href="hyrja.html">Hyr ose regjistrohu</a></li>
+          </ul>
+        </section>
+      </div>
+      <p class="kemba__fundi">© <span data-viti>2026</span> Ekipi Komuna Ime · Projekt studentor. Të dhënat e termineve dhe të lëndëve janë fiktive; buxheti është nga burime publike të Komunës së Prishtinës.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.7.1.min.js"><\/script>');</script>
+  <script src="js/storage.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/termini.js"></script>
+  <script src="js/lenda.js"></script>
+</body>
+</html>
