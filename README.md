@@ -13,12 +13,14 @@ Mësimdhënëse: Prof. Ass. Dr. Dhuratë Hyseni dhe Ass. MSc. Ariana Kadriu.
 
 ## Ekipi
 
-| Anëtari | Emri | Përgjegjësia | Faqet dhe skedarët kryesorë |
-| --- | --- | --- | --- |
-| 1 | Yll Jakupi | Termini dhe dizajni | `index`, `termini`, `radha`, `css/style.css`, `img/`, `js/ui.js`, `js/termini.js`, `data/sherbimet.json` |
-| 2 (Lead) | Rines Kastrati | Lënda dhe bërthama | `lenda`, `hyrja`, panelet, `js/storage.js`, `js/forma.js`, `js/llogaria.js`, `js/lenda.js`, `data/perdoruesit.json` |
-| 3 | Era Aliu | Zëri: buxheti dhe propozimet | `buxheti`, `harta`, `propozo`, `realizimi`, `js/zeri.js`, `js/harta.js`, `data/buxheti.json`, `data/lagjet.json` |
-| 4 | Erblina Krasniqi | Zëri: votimi dhe algoritmet | `voto`, `rezultatet`, `js/voto.js`, `js/algoritmet.js`, `data/propozimet.json` |
+| Anëtari | Emri | GitHub | Përgjegjësia | Faqet dhe skedarët |
+| --- | --- | --- | --- | --- |
+| 1 | Yll Jakupi | [@ylljakup1](https://github.com/ylljakup1) | Termini dhe dizajni | `index`, `termini`, `radha`, `css/style.css`, `img/`, `js/ui.js`, `js/termini.js`, `data/sherbimet.json` |
+| 2 (Lead) | Rines Kastrati | [@rineskastrati-bot](https://github.com/rineskastrati-bot) | Lënda, bërthama dhe organizimi i GitHub-it | `lenda`, `hyrja`, `paneli-zyrtarit`, `paneli-drejtuesve`, `js/storage.js`, `js/forma.js`, `js/llogaria.js`, `js/lenda.js`, `data/perdoruesit.json` |
+| 3 | Era Aliu | [@eraaliu-3](https://github.com/eraaliu-3) | Zëri i Lagjes: buxheti dhe propozimet | `buxheti`, `harta`, `propozo`, `realizimi`, `js/zeri.js`, `js/harta.js`, `data/buxheti.json`, `data/lagjet.json` |
+| 4 | Erblina Krasniqi | [@ERBLINA3](https://github.com/ERBLINA3) | Zëri i Lagjes: votimi dhe algoritmet | `voto`, `rezultatet`, `js/voto.js`, `js/algoritmet.js`, `data/propozimet.json` |
+
+Në `css/style.css` secili ka seksionin e vet: 1–8 dhe 12 Ylli, 9 Rinesi, 10 Era, 11 Erblina.
 
 ## Si hapet projekti
 
@@ -135,9 +137,9 @@ Ngjarja `ki:ndryshim` dërgohet në `window` sa herë ndryshon një koleksion, e
 
 | Browser-i | Pajisja | Kush teston | Data | Rezultati |
 | --- | --- | --- | --- | --- |
-| Google Chrome | Laptop | Anëtarët 1 dhe 2 | | |
-| Mozilla Firefox | Laptop | Anëtari 3 | | |
-| Safari ose Chrome | Telefon | Anëtari 4 | | |
+| Google Chrome | Laptop | Ylli dhe Rinesi | | |
+| Mozilla Firefox | Laptop | Era | | |
+| Safari ose Chrome | Telefon | Erblina | | |
 
 ## Fazat
 
