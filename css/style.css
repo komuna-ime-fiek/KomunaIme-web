@@ -1,0 +1,2024 @@
+/* ==========================================================================
+   Komuna Ime — style.css
+   Një stil i përbashkët, mobile-first, me ngjyrat si CSS variables.
+
+   Për të shmangur konfliktet në Git, secili anëtar punon në seksionin e vet:
+     1–7   Bazat, layout-i, header-i, footer-i, komponentët   → Anëtari 1
+     8     Termini dhe Radha                                  → Anëtari 1
+     9     Lënda, hyrja dhe panelet                           → Anëtari 2
+     10    Buxheti, harta, propozimet, realizimi              → Anëtari 3
+     11    Voto dhe rezultatet                                → Anëtari 4
+     12    Animacionet dhe preferencat e përdoruesit          → Anëtari 1
+   Breakpoint-et: min-width 768px (tablet) dhe 1024px (desktop).
+   ========================================================================== */
+
+/* ==========================================================================
+   1. Variablat
+   ========================================================================== */
+
+:root {
+  /* Ngjyrat e dokumentimit */
+  --kryesore: #1f4e8c;
+  --sukses: #2e8b57;
+  --paralajmerim: #e08a1e;
+  --gabim: #c0392b;
+  --sfondi: #f6f7f9;
+  --teksti: #1d232b;
+  --rrumbullakimi: 8px;
+
+  /* Nuancat që rrjedhin prej tyre */
+  --kryesore-erret: #173b6a;
+  --kryesore-lehte: #e9eff8;
+  --sukses-lehte: #e6f4ec;
+  --sukses-erret: #1f6b42;
+  --paralajmerim-lehte: #fdf1e1;
+  --paralajmerim-erret: #8a4f00;
+  --gabim-lehte: #fbeae8;
+  --bardhe: #ffffff;
+  --kufiri: #d9dee5;
+  --teksti-dyte: #56606d;
+  --kemba: #14263f;
+
+  /* Ngjyrat e hartës (sekuencë blu) */
+  --harta-0: #eef1f5;
+  --harta-1: #c5d5ea;
+  --harta-2: #7d9fcd;
+  --harta-3: #2f5f9e;
+
+  /* Hapësirat (hapa 8px) */
+  --h-1: 4px;
+  --h-2: 8px;
+  --h-3: 16px;
+  --h-4: 24px;
+  --h-5: 32px;
+  --h-6: 48px;
+  --h-7: 64px;
+
+  --hije: 0 1px 2px rgba(20, 38, 63, 0.06), 0 2px 8px rgba(20, 38, 63, 0.06);
+  --hije-larte: 0 6px 20px rgba(20, 38, 63, 0.12);
+  --font: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-kodi: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  --kalimi: 180ms ease;
+  --gjeresia: 1200px;
+}
+
+/* ==========================================================================
+   2. Bazat
+   ========================================================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Atributi hidden fsheh gjithmonë, edhe kur klasa i jep elementit display: grid/flex */
+[hidden] {
+  display: none !important;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  font-size: 1rem;
+  line-height: 1.6;
+  background: var(--sfondi);
+  color: var(--teksti);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.2;
+  margin: 0 0 var(--h-3);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+h1 {
+  font-size: clamp(1.75rem, 1.2rem + 2.4vw, 2.75rem);
+}
+
+h2 {
+  font-size: clamp(1.375rem, 1.1rem + 1.1vw, 1.875rem);
+}
+
+h3 {
+  font-size: 1.125rem;
+}
+
+p {
+  margin: 0 0 var(--h-3);
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: var(--kryesore);
+  text-underline-offset: 3px;
+  transition: color var(--kalimi);
+}
+
+a:hover {
+  color: var(--kryesore-erret);
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  margin: var(--h-6) 0;
+  background: linear-gradient(90deg, transparent, var(--kufiri) 15%, var(--kufiri) 85%, transparent);
+}
+
+ul,
+ol {
+  padding-left: 1.25rem;
+  margin: 0 0 var(--h-3);
+}
+
+li + li {
+  margin-top: var(--h-1);
+}
+
+code,
+pre {
+  font-family: var(--font-kodi);
+  font-size: 0.875rem;
+}
+
+code {
+  background: var(--kryesore-lehte);
+  color: var(--kryesore-erret);
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+}
+
+pre {
+  background: #0f1e33;
+  color: #e5ecf5;
+  padding: var(--h-3);
+  border-radius: var(--rrumbullakimi);
+  overflow-x: auto;
+  line-height: 1.5;
+}
+
+pre code {
+  background: none;
+  color: inherit;
+  padding: 0;
+}
+
+:focus-visible {
+  outline: 3px solid var(--paralajmerim);
+  outline-offset: 2px;
+}
+
+::selection {
+  background: var(--kryesore);
+  color: var(--bardhe);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link {
+  position: absolute;
+  left: var(--h-3);
+  top: -100px;
+  z-index: 100;
+  background: var(--kryesore);
+  color: var(--bardhe);
+  padding: var(--h-2) var(--h-3);
+  border-radius: var(--rrumbullakimi);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: var(--h-2);
+  color: var(--bardhe);
+}
+
+/* Faqet e mbrojtura nuk shfaqen derisa ui.js ta konfirmojë rolin. */
+body[data-mbrojtur]:not(.e-lejuar) main {
+  visibility: hidden;
+}
+
+/* ==========================================================================
+   3. Layout-i
+   ========================================================================== */
+
+.kontejner {
+  width: 100%;
+  max-width: var(--gjeresia);
+  margin: 0 auto;
+  padding-inline: var(--h-3);
+}
+
+/* padding-block, që .seksion të kombinohet me .kontejner pa e prishur njëra-tjetrën */
+.seksion {
+  padding-block: var(--h-6);
+}
+
+.kontejner > hr {
+  margin: 0;
+}
+
+.tabela-mbajtesi + p {
+  margin-top: var(--h-2);
+}
+
+.seksion--i-bardhe {
+  background: var(--bardhe);
+  border-block: 1px solid var(--kufiri);
+}
+
+.seksion__koka {
+  max-width: 720px;
+  margin-bottom: var(--h-5);
+}
+
+.seksion__koka p {
+  color: var(--teksti-dyte);
+}
+
+.grid-kartash {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--h-4);
+}
+
+.dy-kolona {
+  display: grid;
+  gap: var(--h-5);
+}
+
+/* Pa këtë, një tabelë e gjerë e zgjeron kolonën e grid-it përtej ekranit */
+.dy-kolona > *,
+.termini-faqja > *,
+.harta-faqja > *,
+.voto-faqja > *,
+.hyrja-faqja > * {
+  min-width: 0;
+}
+
+.rresht {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--h-3);
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .kontejner {
+    padding-inline: var(--h-4);
+  }
+
+  .dy-kolona {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ==========================================================================
+   4. Header-i dhe navigimi
+   ========================================================================== */
+
+.koka {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: saturate(1.4) blur(6px);
+  border-bottom: 1px solid var(--kufiri);
+}
+
+.koka__brenda {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 64px;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--h-2);
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: var(--teksti);
+  text-decoration: none;
+  letter-spacing: -0.01em;
+}
+
+.logo:hover {
+  color: var(--kryesore);
+}
+
+.logo img {
+  width: 32px;
+  height: 32px;
+}
+
+/* Butoni hamburger: tri vija, ku e mesmja zhduket dhe dy të tjerat rrotullohen. */
+.menu-butoni {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--kufiri);
+  border-radius: var(--rrumbullakimi);
+  background: var(--bardhe);
+  cursor: pointer;
+}
+
+.menu-ikona,
+.menu-ikona::before,
+.menu-ikona::after {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: var(--teksti);
+  border-radius: 2px;
+  transition: transform var(--kalimi), background var(--kalimi);
+}
+
+.menu-ikona {
+  position: relative;
+}
+
+.menu-ikona::before,
+.menu-ikona::after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+
+.menu-ikona::before {
+  top: -6px;
+}
+
+.menu-ikona::after {
+  top: 6px;
+}
+
+.menu-butoni[aria-expanded="true"] .menu-ikona {
+  background: transparent;
+}
+
+.menu-butoni[aria-expanded="true"] .menu-ikona::before {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.menu-butoni[aria-expanded="true"] .menu-ikona::after {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+/* Në telefon menyja është e mbyllur; jQuery e hap me slideToggle. */
+.menuja {
+  display: none;
+  width: 100%;
+  padding: var(--h-2) 0 var(--h-3);
+}
+
+.menuja ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menuja li + li {
+  margin-top: 0;
+}
+
+.menuja a:not(.butoni) {
+  display: block;
+  padding: var(--h-2) var(--h-2);
+  color: var(--teksti);
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.menuja a:not(.butoni):hover {
+  background: var(--kryesore-lehte);
+  color: var(--kryesore);
+}
+
+.menuja a[aria-current] {
+  color: var(--kryesore);
+  font-weight: 600;
+  background: var(--kryesore-lehte);
+}
+
+.llogaria {
+  display: flex;
+  align-items: center;
+  gap: var(--h-2);
+  padding: var(--h-3) var(--h-2) 0;
+  border-top: 1px solid var(--kufiri);
+  margin-top: var(--h-2);
+}
+
+.llogaria__lidhja {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--h-2);
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--teksti);
+}
+
+.llogaria__emri {
+  max-width: 14ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.distinktivi {
+  display: inline-grid;
+  place-items: center;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 6px;
+  border-radius: 999px;
+  background: var(--gabim);
+  color: var(--bardhe);
+  font-size: 0.75rem;
+  font-weight: 700;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@media (min-width: 768px) {
+  .menu-butoni {
+    display: none;
+  }
+
+  /* !important mbishkruan stilin inline që lë slideToggle në telefon */
+  .menuja {
+    display: flex !important;
+    width: auto;
+    align-items: center;
+    gap: var(--h-3);
+    padding: 0;
+  }
+
+  .menuja ul {
+    display: flex;
+    gap: var(--h-1);
+  }
+
+  .menuja a:not(.butoni) {
+    padding: var(--h-2) 12px;
+    position: relative;
+  }
+
+  .menuja a[aria-current] {
+    background: none;
+  }
+
+  .menuja a[aria-current]::after {
+    content: "";
+    position: absolute;
+    left: 12px;
+    right: 12px;
+    bottom: -12px;
+    height: 3px;
+    border-radius: 3px 3px 0 0;
+    background: var(--kryesore);
+  }
+
+  .llogaria {
+    border-top: 0;
+    border-left: 1px solid var(--kufiri);
+    margin: 0;
+    padding: 0 0 0 var(--h-3);
+  }
+}
+
+/* Nën-navigimi brenda një moduli (p.sh. Buxheti · Harta · Propozo · Voto) */
+.nen-navigimi {
+  background: var(--bardhe);
+  border-bottom: 1px solid var(--kufiri);
+}
+
+.nen-navigimi ul {
+  display: flex;
+  gap: var(--h-1);
+  list-style: none;
+  margin: 0;
+  padding: var(--h-2) 0;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+.nen-navigimi li + li {
+  margin-top: 0;
+}
+
+.nen-navigimi a {
+  display: block;
+  white-space: nowrap;
+  padding: 6px 14px;
+  border-radius: 999px;
+  color: var(--teksti-dyte);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background var(--kalimi), color var(--kalimi);
+}
+
+.nen-navigimi a:hover {
+  background: var(--sfondi);
+  color: var(--teksti);
+}
+
+.nen-navigimi a[aria-current="page"] {
+  background: var(--kryesore);
+  color: var(--bardhe);
+}
+
+/* ==========================================================================
+   5. Hero dhe koka e faqeve
+   ========================================================================== */
+
+.hero {
+  position: relative;
+  color: var(--bardhe);
+  padding: var(--h-7) 0 calc(var(--h-7) + 40px);
+  background:
+    url("../img/qyteti.svg") bottom center / 1200px auto repeat-x,
+    linear-gradient(135deg, rgba(31, 78, 140, 0.97), rgba(23, 59, 106, 0.94) 55%, rgba(46, 139, 87, 0.9));
+  overflow: hidden;
+}
+
+.hero h1 {
+  font-size: clamp(2.25rem, 1.4rem + 4vw, 3.75rem);
+  margin-bottom: var(--h-3);
+}
+
+.hero__nentitulli {
+  font-size: clamp(1.0625rem, 1rem + 0.5vw, 1.25rem);
+  max-width: 640px;
+  opacity: 0.92;
+  margin-bottom: var(--h-5);
+}
+
+.hero__veprimet {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--h-2);
+}
+
+.hero .butoni--dyte {
+  background: transparent;
+  color: var(--bardhe);
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.hero .butoni--dyte:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: var(--bardhe);
+}
+
+.hero .butoni:not(.butoni--dyte) {
+  background: var(--bardhe);
+  color: var(--kryesore);
+}
+
+.hero .butoni:not(.butoni--dyte):hover {
+  background: var(--kryesore-lehte);
+}
+
+.faqja-koka {
+  background: var(--bardhe);
+  border-bottom: 1px solid var(--kufiri);
+  padding: var(--h-5) 0 var(--h-4);
+}
+
+.faqja-koka h1 {
+  margin-bottom: var(--h-2);
+}
+
+.faqja-koka p {
+  color: var(--teksti-dyte);
+  max-width: 720px;
+  margin-bottom: 0;
+  font-size: 1.0625rem;
+}
+
+.mbikalimi {
+  display: inline-block;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--kryesore);
+  margin-bottom: var(--h-2);
+}
+
+.hero .mbikalimi {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* ==========================================================================
+   6. Komponentët: butonat, kartat, etiketat, tabelat, format, toast-et
+   ========================================================================== */
+
+/* --- Butonat --- */
+
+.butoni {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--h-2);
+  min-height: 44px;
+  padding: 10px 20px;
+  border: 1px solid var(--kryesore);
+  border-radius: var(--rrumbullakimi);
+  background: var(--kryesore);
+  color: var(--bardhe);
+  font: inherit;
+  font-weight: 600;
+  line-height: 1.2;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background var(--kalimi), color var(--kalimi), box-shadow var(--kalimi), transform var(--kalimi);
+}
+
+.butoni:hover {
+  background: var(--kryesore-erret);
+  color: var(--bardhe);
+  transform: translateY(-1px);
+  box-shadow: var(--hije-larte);
+}
+
+.butoni:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.butoni:disabled,
+.butoni[aria-disabled="true"] {
+  background: var(--kufiri);
+  border-color: var(--kufiri);
+  color: var(--teksti-dyte);
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.butoni--dyte {
+  background: var(--bardhe);
+  color: var(--kryesore);
+}
+
+.butoni--dyte:hover {
+  background: var(--kryesore-lehte);
+  color: var(--kryesore-erret);
+}
+
+.butoni--teksti {
+  background: transparent;
+  border-color: transparent;
+  color: var(--kryesore);
+}
+
+.butoni--teksti:hover {
+  background: var(--kryesore-lehte);
+  color: var(--kryesore-erret);
+  box-shadow: none;
+}
+
+.butoni--vogel {
+  min-height: 36px;
+  padding: 6px 14px;
+  font-size: 0.9375rem;
+}
+
+.butoni--madh {
+  min-height: 52px;
+  padding: 14px 28px;
+  font-size: 1.0625rem;
+}
+
+.butoni--plot {
+  width: 100%;
+}
+
+.butoni--rrezik {
+  background: var(--bardhe);
+  color: var(--gabim);
+  border-color: var(--gabim);
+}
+
+.butoni--rrezik:hover,
+.butoni--rrezik.konfirmo {
+  background: var(--gabim);
+  color: var(--bardhe);
+}
+
+/* Spinner gjatë ngarkimit */
+.butoni--ngarkon::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: rrotullim 0.7s linear infinite;
+}
+
+/* --- Kartat --- */
+
+.karta {
+  background: var(--bardhe);
+  border: 1px solid var(--kufiri);
+  border-radius: var(--rrumbullakimi);
+  padding: var(--h-4);
+  box-shadow: var(--hije);
+  transition: transform var(--kalimi), box-shadow var(--kalimi), border-color var(--kalimi);
+}
+
+.karta > :last-child {
+  margin-bottom: 0;
+}
+
+a.karta,
+.karta--interaktive {
+  color: inherit;
+  text-decoration: none;
+}
+
+a.karta:hover,
+.karta--interaktive:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--hije-larte);
+  border-color: #b8c6da;
+}
+
+.karta-moduli {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  overflow: hidden;
+  animation: shfaqje 0.4s ease both;
+}
+
+.karta-moduli:nth-child(2) {
+  animation-delay: 80ms;
+}
+
+.karta-moduli:nth-child(3) {
+  animation-delay: 160ms;
+}
+
+.karta-moduli img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: var(--kryesore-lehte);
+}
+
+.karta-moduli__trupi {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: var(--h-4);
+}
+
+.karta-moduli__trupi p {
+  color: var(--teksti-dyte);
+}
+
+.karta-moduli__trupi .butoni {
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+.karta-moduli__momenti {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--kryesore);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* --- Etiketat dhe statuset --- */
+
+.etiketa,
+.statusi {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  line-height: 1.6;
+  white-space: nowrap;
+  background: var(--kryesore-lehte);
+  color: var(--kryesore-erret);
+}
+
+.statusi::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+/* Ngjyrat përdoren vetëm për statuset: në kohë, afër afatit, me vonesë */
+.statusi--ne-kohe,
+.statusi--perfunduar,
+.statusi--mbyllur {
+  background: var(--sukses-lehte);
+  color: var(--sukses-erret);
+}
+
+.statusi--afer-afatit,
+.statusi--ne-zbatim,
+.statusi--kerkohen-plotesime {
+  background: var(--paralajmerim-lehte);
+  color: var(--paralajmerim-erret);
+}
+
+.statusi--vonese,
+.statusi--refuzuar {
+  background: var(--gabim-lehte);
+  color: var(--gabim);
+}
+
+.statusi--planifikuar {
+  background: #eef1f5;
+  color: var(--teksti-dyte);
+}
+
+/* --- Tabelat --- */
+
+.tabela-mbajtesi {
+  overflow-x: auto;
+  background: var(--bardhe);
+  border: 1px solid var(--kufiri);
+  border-radius: var(--rrumbullakimi);
+  box-shadow: var(--hije);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+}
+
+caption {
+  text-align: left;
+  padding: var(--h-3) var(--h-3) var(--h-2);
+  font-weight: 600;
+  color: var(--teksti);
+}
+
+th,
+td {
+  padding: 12px var(--h-3);
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--kufiri);
+}
+
+thead th {
+  background: var(--sfondi);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--teksti-dyte);
+  white-space: nowrap;
+}
+
+tbody th {
+  font-weight: 500;
+}
+
+tbody tr:nth-child(even) {
+  background: #fafbfc;
+}
+
+tbody tr:hover {
+  background: var(--kryesore-lehte);
+}
+
+tfoot th,
+tfoot td {
+  font-weight: 700;
+  border-bottom: 0;
+  background: var(--sfondi);
+}
+
+.numer {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+/* Shtylla horizontale brenda tabelës: gjerësia vjen nga --pjesa */
+.shtylla-qeliza {
+  width: 30%;
+  min-width: 120px;
+  vertical-align: middle;
+}
+
+.shtylla {
+  display: block;
+  height: 10px;
+  border-radius: 999px;
+  background: var(--sfondi);
+  overflow: hidden;
+}
+
+.shtylla::before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: var(--pjesa, 0%);
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--kryesore), #3f74bd);
+  transition: width 0.6s ease;
+}
+
+/* --- Format --- */
+
+.forma {
+  display: grid;
+  gap: var(--h-4);
+}
+
+fieldset {
+  border: 1px solid var(--kufiri);
+  border-radius: var(--rrumbullakimi);
+  padding: var(--h-4);
+  margin: 0;
+  background: var(--bardhe);
+  display: grid;
+  gap: var(--h-3);
+}
+
+legend {
+  padding: 0 var(--h-2);
+  font-weight: 700;
+  font-size: 1.0625rem;
+}
+
+.fusha {
+  display: grid;
+  gap: 6px;
+}
+
+.fusha label,
+.fusha .etiketa-fushes {
+  font-weight: 600;
+  font-size: 0.9375rem;
+}
+
+.fusha__ndihme {
+  font-size: 0.875rem;
+  color: var(--teksti-dyte);
+  margin: 0;
+}
+
+input:not([type="checkbox"]):not([type="radio"]),
+select,
+textarea {
+  width: 100%;
+  min-height: 44px;
+  padding: 10px 12px;
+  font: inherit;
+  color: var(--teksti);
+  background: var(--bardhe);
+  border: 1px solid #b9c2ce;
+  border-radius: var(--rrumbullakimi);
+  transition: border-color var(--kalimi), box-shadow var(--kalimi);
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+input:hover,
+select:hover,
+textarea:hover {
+  border-color: var(--teksti-dyte);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--kryesore);
+  box-shadow: 0 0 0 3px rgba(31, 78, 140, 0.2);
+}
+
+/* Gabimi shfaqet vetëm pasi përdoruesi e ka prekur fushën */
+input[aria-invalid="true"],
+select[aria-invalid="true"],
+textarea[aria-invalid="true"],
+.e-prekur:invalid {
+  border-color: var(--gabim);
+  background: #fffafa;
+}
+
+input[aria-invalid="true"]:focus,
+select[aria-invalid="true"]:focus,
+textarea[aria-invalid="true"]:focus {
+  box-shadow: 0 0 0 3px rgba(192, 57, 43, 0.18);
+}
+
+.fusha__gabim {
+  margin: 0;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--gabim);
+}
+
+.fusha__gabim:empty {
+  display: none;
+}
+
+.fusha--kutia {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--h-2);
+  flex-wrap: wrap;
+}
+
+.fusha--kutia label {
+  font-weight: 400;
+  flex: 1;
+}
+
+.fusha--kutia .fusha__gabim {
+  flex-basis: 100%;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  margin: 2px 0 0;
+  accent-color: var(--kryesore);
+  flex-shrink: 0;
+}
+
+.rreshti-fushash {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--h-3);
+}
+
+.rreshti-fushash > .fusha {
+  flex: 1 1 220px;
+}
+
+.veprimet-e-formes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--h-2);
+  align-items: center;
+}
+
+/* --- Toast-et --- */
+
+.toasts {
+  position: fixed;
+  z-index: 200;
+  left: var(--h-3);
+  right: var(--h-3);
+  bottom: var(--h-3);
+  display: grid;
+  gap: var(--h-2);
+  pointer-events: none;
+}
+
+.toast {
+  pointer-events: auto;
+  padding: 12px var(--h-3);
+  border-radius: var(--rrumbullakimi);
+  background: var(--teksti);
+  color: var(--bardhe);
+  box-shadow: var(--hije-larte);
+  font-weight: 500;
+  border-left: 4px solid var(--kryesore);
+}
+
+.toast--sukses {
+  border-left-color: #5cc48a;
+}
+
+.toast--gabim {
+  border-left-color: #ff7a6b;
+}
+
+.toast--paralajmerim {
+  border-left-color: var(--paralajmerim);
+}
+
+@media (min-width: 768px) {
+  .toasts {
+    left: auto;
+    right: var(--h-4);
+    bottom: var(--h-4);
+    width: 380px;
+  }
+}
+
+/* --- Njoftimet e sistemit, vendet bosh dhe pjesët në ndërtim --- */
+
+.njoftim-sistemi {
+  background: var(--gabim-lehte);
+  color: var(--gabim);
+  border-bottom: 1px solid #f0c4be;
+  padding: 12px var(--h-3);
+  text-align: center;
+  font-weight: 600;
+}
+
+.kutia-info {
+  background: var(--kryesore-lehte);
+  border: 1px solid #c9d7ec;
+  border-radius: var(--rrumbullakimi);
+  padding: var(--h-3);
+  font-size: 0.9375rem;
+}
+
+.kutia-info > :last-child {
+  margin-bottom: 0;
+}
+
+.kutia-info--paralajmerim {
+  background: var(--paralajmerim-lehte);
+  border-color: #f3d3a6;
+}
+
+.bosh {
+  color: var(--teksti-dyte);
+  font-style: italic;
+  list-style: none;
+}
+
+.ne-ndertim {
+  position: relative;
+  border: 2px dashed #c3ccd8;
+  border-radius: var(--rrumbullakimi);
+  padding: var(--h-4);
+  background: repeating-linear-gradient(-45deg, #fafbfc, #fafbfc 12px, #f4f6f9 12px, #f4f6f9 24px);
+  color: var(--teksti-dyte);
+}
+
+.ne-ndertim > :last-child {
+  margin-bottom: 0;
+}
+
+.ne-ndertim__faza {
+  display: inline-block;
+  margin-bottom: var(--h-2);
+  padding: 2px 10px;
+  border-radius: 999px;
+  background: var(--bardhe);
+  border: 1px solid var(--kufiri);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--kryesore);
+}
+
+/* --- Treguesit (KPI) --- */
+
+.treguesit {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--h-3);
+}
+
+.treguesi {
+  background: var(--bardhe);
+  border: 1px solid var(--kufiri);
+  border-radius: var(--rrumbullakimi);
+  padding: var(--h-3) var(--h-4);
+  box-shadow: var(--hije);
+}
+
+.treguesi__vlera {
+  display: block;
+  font-size: 1.75rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--kryesore);
+  line-height: 1.2;
+}
+
+.treguesi__emri {
+  display: block;
+  color: var(--teksti-dyte);
+  font-size: 0.9375rem;
+}
+
+/* --- Pyetjet e shpeshta --- */
+
+.pyetjet {
+  display: grid;
+  gap: var(--h-2);
+  max-width: 820px;
+}
+
+.pyetja {
+  background: var(--bardhe);
+  border: 1px solid var(--kufiri);
+  border-radius: var(--rrumbullakimi);
+}
+
+.pyetja h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.pyetja__butoni {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--h-3);
+  width: 100%;
+  padding: var(--h-3) var(--h-4);
+  background: none;
+  border: 0;
+  font: inherit;
+  font-weight: 600;
+  text-align: left;
+  color: var(--teksti);
+  cursor: pointer;
+}
+
+.pyetja__butoni::after {
+  content: "";
+  flex-shrink: 0;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg) translateY(-3px);
+  transition: transform var(--kalimi);
+}
+
+.pyetja__butoni[aria-expanded="true"]::after {
+  transform: rotate(-135deg) translateY(-3px);
+}
+
+.pyetja__pergjigja {
+  display: none;
+  padding: 0 var(--h-4) var(--h-3);
+  color: var(--teksti-dyte);
+}
+
+/* ==========================================================================
+   7. Footer-i
+   ========================================================================== */
+
+.kemba {
+  background: var(--kemba);
+  color: #c9d3e0;
+  padding: var(--h-6) 0 var(--h-4);
+  margin-top: var(--h-6);
+  font-size: 0.9375rem;
+}
+
+.kemba__grid {
+  display: grid;
+  gap: var(--h-5);
+}
+
+.kemba h2 {
+  font-size: 1rem;
+  color: var(--bardhe);
+  margin-bottom: var(--h-2);
+}
+
+.kemba ul {
+  list-style: none;
+  padding: 0;
+}
+
+.kemba a {
+  color: #c9d3e0;
+}
+
+.kemba a:hover {
+  color: var(--bardhe);
+}
+
+.kemba__fundi {
+  margin-top: var(--h-5);
+  padding-top: var(--h-3);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  font-size: 0.875rem;
+  color: #93a3b8;
+}
+
+@media (min-width: 768px) {
+  .kemba__grid {
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+}
+
+/* ==========================================================================
+   8. Termini dhe Radha (Anëtari 1)
+   ========================================================================== */
+
+.termini-faqja {
+  display: grid;
+  gap: var(--h-4);
+}
+
+.oret {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(84px, 1fr));
+  gap: var(--h-2);
+}
+
+.oret > .bosh {
+  grid-column: 1 / -1;
+  margin: 0;
+}
+
+.radha-ekrani {
+  display: grid;
+  gap: var(--h-3);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.radha-ekrani .treguesi__vlera {
+  font-size: clamp(2.5rem, 2rem + 3vw, 4rem);
+}
+
+@media (min-width: 1024px) {
+  .termini-faqja {
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+  }
+}
+
+/* ==========================================================================
+   9. Lënda, hyrja dhe panelet (Anëtari 2)
+   ========================================================================== */
+
+.cikli {
+  display: grid;
+  gap: var(--h-2);
+  counter-reset: hapi;
+  list-style: none;
+  padding: 0;
+}
+
+.cikli li {
+  counter-increment: hapi;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0;
+  padding: 12px var(--h-3);
+  background: var(--bardhe);
+  border: 1px solid var(--kufiri);
+  border-radius: var(--rrumbullakimi);
+}
+
+.cikli li::before {
+  content: counter(hapi);
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--kryesore-lehte);
+  color: var(--kryesore);
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.cikli li:first-child::before {
+  background: var(--kryesore);
+  color: var(--bardhe);
+}
+
+.cikli li:last-child::before {
+  background: var(--sukses);
+  color: var(--bardhe);
+}
+
+@media (min-width: 768px) {
+  .cikli {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .cikli li {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.hyrja-faqja {
+  display: grid;
+  gap: var(--h-4);
+  max-width: 1000px;
+}
+
+.tabet {
+  display: flex;
+  gap: var(--h-1);
+  padding: var(--h-1);
+  background: #e9edf2;
+  border-radius: calc(var(--rrumbullakimi) + 2px);
+  margin-bottom: var(--h-3);
+}
+
+.tabet [role="tab"] {
+  flex: 1;
+  min-height: 40px;
+  border: 0;
+  border-radius: var(--rrumbullakimi);
+  background: transparent;
+  font: inherit;
+  font-weight: 600;
+  color: var(--teksti-dyte);
+  cursor: pointer;
+}
+
+.tabet [role="tab"][aria-selected="true"] {
+  background: var(--bardhe);
+  color: var(--kryesore);
+  box-shadow: var(--hije);
+}
+
+.llogarite-demo {
+  display: grid;
+  gap: var(--h-2);
+}
+
+.llogarite-demo .butoni {
+  justify-content: space-between;
+}
+
+.lista-njoftimeve {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: var(--h-2);
+}
+
+.njoftimi {
+  margin: 0;
+  padding: 12px var(--h-3);
+  border: 1px solid var(--kufiri);
+  border-radius: var(--rrumbullakimi);
+  background: var(--bardhe);
+}
+
+.njoftimi p {
+  margin: 0;
+}
+
+.njoftimi time {
+  font-size: 0.8125rem;
+  color: var(--teksti-dyte);
+}
+
+.njoftimi--ri {
+  border-left: 4px solid var(--kryesore);
+  background: var(--kryesore-lehte);
+}
+
+.te-dhenat {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: var(--h-2) var(--h-4);
+  margin: 0 0 var(--h-4);
+}
+
+.te-dhenat dt {
+  color: var(--teksti-dyte);
+}
+
+.te-dhenat dd {
+  margin: 0;
+  font-weight: 600;
+}
+
+@media (min-width: 1024px) {
+  .hyrja-faqja {
+    grid-template-columns: 3fr 2fr;
+    align-items: start;
+  }
+}
+
+/* ==========================================================================
+   10. Buxheti, harta, propozimet, realizimi (Anëtari 3)
+   ========================================================================== */
+
+.harta-faqja {
+  display: grid;
+  gap: var(--h-4);
+}
+
+.harta-mbajtesi {
+  background: var(--bardhe);
+  border: 1px solid var(--kufiri);
+  border-radius: var(--rrumbullakimi);
+  padding: var(--h-2);
+  box-shadow: var(--hije);
+}
+
+.harta {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.harta__kufiri {
+  fill: #f4f6f9;
+  stroke: #a9b6c7;
+  stroke-width: 2;
+}
+
+.lagja {
+  fill: var(--ngjyra-lagjes, var(--harta-1));
+  stroke: var(--bardhe);
+  stroke-width: 2;
+  stroke-linejoin: round;
+  cursor: pointer;
+  transition: fill-opacity var(--kalimi), filter var(--kalimi);
+}
+
+.lagja:hover {
+  filter: brightness(0.92);
+}
+
+.lagja:focus {
+  outline: none;
+}
+
+.lagja:focus-visible {
+  stroke: var(--paralajmerim);
+  stroke-width: 4;
+}
+
+.harta__perzgjedhja {
+  fill: none;
+  stroke: var(--teksti);
+  stroke-width: 3.5;
+  stroke-linejoin: round;
+  pointer-events: none;
+}
+
+.lagja__emri {
+  font-size: 12px;
+  font-weight: 600;
+  fill: var(--teksti);
+  text-anchor: middle;
+  dominant-baseline: middle;
+  paint-order: stroke;
+  stroke: rgba(255, 255, 255, 0.85);
+  stroke-width: 3px;
+  pointer-events: none;
+}
+
+.legjenda {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--h-2) var(--h-3);
+  list-style: none;
+  padding: var(--h-2) var(--h-2) 0;
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--teksti-dyte);
+}
+
+.legjenda li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+}
+
+.legjenda__ngjyra {
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.info-lagja h2 {
+  margin-bottom: var(--h-3);
+}
+
+.info-lagja .te-dhenat {
+  grid-template-columns: 1fr max-content;
+}
+
+.info-lagja .te-dhenat dd {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.lista-projekteve-kapitale {
+  list-style: none;
+  padding: 0;
+  font-size: 0.9375rem;
+}
+
+.lista-projekteve-kapitale li {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--h-3);
+  padding: var(--h-2) 0;
+  border-top: 1px solid var(--kufiri);
+  margin: 0;
+}
+
+.lista-projekteve-kapitale strong {
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+@media (min-width: 1024px) {
+  .harta-faqja {
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+  }
+
+  .harta-faqja aside {
+    position: sticky;
+    top: 88px;
+  }
+}
+
+/* ==========================================================================
+   11. Voto dhe rezultatet (Anëtari 4)
+   ========================================================================== */
+
+.voto-faqja {
+  display: grid;
+  gap: var(--h-4);
+  padding-bottom: 96px; /* hapësirë për shportën e poshtme në telefon */
+}
+
+.voto-filtrat {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--h-3);
+  align-items: flex-end;
+  margin-bottom: var(--h-4);
+}
+
+.voto-filtrat .fusha {
+  flex: 1 1 200px;
+}
+
+.voto-filtrat__numri {
+  margin: 0 0 10px;
+  color: var(--teksti-dyte);
+  font-size: 0.9375rem;
+}
+
+/* Shiriti i buxhetit */
+.buxheti-virtual {
+  margin-bottom: var(--h-4);
+}
+
+.buxheti-virtual__shifrat {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--h-2);
+  margin-bottom: var(--h-2);
+  font-size: 0.9375rem;
+}
+
+.buxheti-virtual__shifrat strong {
+  font-variant-numeric: tabular-nums;
+}
+
+.shiriti-buxhetit {
+  height: 14px;
+  border-radius: 999px;
+  background: #e3e8ef;
+  overflow: hidden;
+}
+
+.shiriti-buxhetit__mbushja {
+  height: 100%;
+  width: 0;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--sukses), #4fb37b);
+  transition: width 0.35s ease, background var(--kalimi);
+}
+
+.shiriti-buxhetit--tejkaluar .shiriti-buxhetit__mbushja {
+  background: linear-gradient(90deg, var(--gabim), #e2604f);
+}
+
+.lista-projekteve {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: var(--h-3);
+}
+
+.karta-projekti {
+  display: flex;
+  flex-direction: column;
+  gap: var(--h-2);
+  cursor: pointer;
+  animation: shfaqje 0.3s ease both;
+}
+
+.karta-projekti h3 {
+  margin: 0;
+}
+
+.karta-projekti p {
+  margin: 0;
+  color: var(--teksti-dyte);
+  font-size: 0.9375rem;
+  flex: 1;
+}
+
+.karta-projekti:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--hije-larte);
+}
+
+.karta-projekti__koka {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--h-2);
+}
+
+.karta-projekti__kostoja {
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.karta-projekti__zgjedhja {
+  display: flex;
+  align-items: center;
+  gap: var(--h-2);
+  padding-top: var(--h-2);
+  border-top: 1px solid var(--kufiri);
+  font-weight: 600;
+  color: var(--kryesore);
+}
+
+.karta-projekti__zgjedhja label {
+  cursor: pointer;
+}
+
+/* Karta e zgjedhur ndriçohet (:has me :checked, me klasën .e-zgjedhur si rezervë) */
+.karta-projekti.e-zgjedhur,
+.karta-projekti:has(input:checked) {
+  border-color: var(--kryesore);
+  background: var(--kryesore-lehte);
+  box-shadow: 0 0 0 2px var(--kryesore) inset, var(--hije);
+}
+
+/* Shporta: panel poshtë në telefon, kolonë anësore në desktop */
+.shporta {
+  position: fixed;
+  z-index: 40;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--bardhe);
+  border-top: 1px solid var(--kufiri);
+  box-shadow: 0 -6px 20px rgba(20, 38, 63, 0.12);
+  border-radius: 14px 14px 0 0;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.shporta__permbledhja {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--h-3);
+  width: 100%;
+  padding: 12px var(--h-3);
+  background: none;
+  border: 0;
+  font: inherit;
+  font-weight: 600;
+  color: var(--teksti);
+  cursor: pointer;
+}
+
+.shporta__permbledhja .distinktivi {
+  background: var(--kryesore);
+  animation: none;
+}
+
+.shporta__trupi {
+  display: none;
+  overflow-y: auto;
+  padding: 0 var(--h-3) var(--h-3);
+}
+
+.shporta--hapur .shporta__trupi {
+  display: block;
+}
+
+.shporta h2 {
+  font-size: 1.125rem;
+}
+
+.shporta__lista {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--h-3);
+}
+
+.shporta__lista li {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  gap: var(--h-2);
+  padding: var(--h-2) 0;
+  border-bottom: 1px solid var(--kufiri);
+  margin: 0;
+  font-size: 0.9375rem;
+}
+
+.shporta__lista li.bosh {
+  display: block;
+}
+
+.shporta__kostoja {
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.butoni-hiq {
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--kufiri);
+  border-radius: 50%;
+  background: var(--bardhe);
+  font-size: 1.125rem;
+  line-height: 1;
+  color: var(--teksti-dyte);
+  cursor: pointer;
+  transition: background var(--kalimi), color var(--kalimi);
+}
+
+.butoni-hiq:hover {
+  background: var(--gabim-lehte);
+  color: var(--gabim);
+  border-color: var(--gabim);
+}
+
+.shporta__totali {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin-bottom: var(--h-2);
+}
+
+.shporta__mesazhi {
+  min-height: 1.6em;
+  font-size: 0.9375rem;
+  font-weight: 500;
+}
+
+.shporta__mesazhi--gabim {
+  color: var(--gabim);
+}
+
+.shporta__mesazhi--sukses {
+  color: var(--sukses-erret);
+}
+
+@media (min-width: 1024px) {
+  .voto-faqja {
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+    padding-bottom: 0;
+  }
+
+  .shporta {
+    position: sticky;
+    top: 88px;
+    max-height: none;
+    border: 1px solid var(--kufiri);
+    border-radius: var(--rrumbullakimi);
+    box-shadow: var(--hije);
+  }
+
+  .shporta__permbledhja {
+    display: none;
+  }
+
+  .shporta__trupi {
+    display: block;
+    padding: var(--h-4);
+  }
+}
+
+/* ==========================================================================
+   12. Animacionet dhe preferencat e përdoruesit
+   ========================================================================== */
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.12);
+  }
+}
+
+@keyframes shfaqje {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes dridhje {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  20%,
+  60% {
+    transform: translateX(-6px);
+  }
+  40%,
+  80% {
+    transform: translateX(6px);
+  }
+}
+
+@keyframes rrotullim {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.dridhje {
+  animation: dridhje 0.4s ease;
+}
+
+/* Animacionet çaktivizohen për përdoruesit që e kanë kërkuar këtë në sistem */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
