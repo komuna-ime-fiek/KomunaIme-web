@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voto për lagjen | Komuna Ime</title>
+  <meta name="description" content="Voto projektet e lagjes tënde në Prishtinë me një buxhet virtual: zgjidh, shih totalin dhe mos e tejkalo buxhetin.">
+  <meta name="author" content="Ekipi Komuna Ime – FIEK">
+  <meta name="theme-color" content="#1f4e8c">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-faqja="voto">
+  <a href="#main" class="skip-link">Kalo te përmbajtja</a>
+
+  <header class="koka">
+    <div class="kontejner koka__brenda">
+      <a class="logo" href="index.html">
+        <img src="img/logo.svg" alt="" width="32" height="32">
+        <span>Komuna Ime</span>
+      </a>
+      <button class="menu-butoni" type="button" aria-expanded="false" aria-controls="menuja">
+        <span class="menu-ikona" aria-hidden="true"></span>
+        <span class="sr-only">Hap menynë</span>
+      </button>
+      <nav id="menuja" class="menuja" aria-label="Navigimi kryesor">
+        <ul>
+          <li><a href="index.html">Ballina</a></li>
+          <li><a href="termini.html">Termini</a></li>
+          <li><a href="lenda.html">Gjurmo lëndën</a></li>
+          <li><a href="buxheti.html" aria-current="true">Zëri i Lagjes</a></li>
+          <li data-shfaq-per="zyrtar drejtues" hidden><a href="paneli-zyrtarit.html">Paneli</a></li>
+        </ul>
+        <div id="llogaria" class="llogaria">
+          <a class="butoni butoni--dyte butoni--vogel" href="hyrja.html">Hyr</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <nav class="nen-navigimi" aria-label="Moduli Zëri i Lagjes">
+    <div class="kontejner">
+      <ul>
+        <li><a href="buxheti.html">Buxheti</a></li>
+        <li><a href="harta.html">Harta</a></li>
+        <li><a href="propozo.html">Propozo</a></li>
+        <li><a href="voto.html" aria-current="page">Voto</a></li>
+        <li><a href="rezultatet.html">Rezultatet</a></li>
+        <li><a href="realizimi.html">Realizimi</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main">
+    <div class="faqja-koka">
+      <div class="kontejner">
+        <span class="mbikalimi">Zëri i Lagjes</span>
+        <h1 id="titulli-faqes">Voto për lagjen tënde</h1>
+        <p>Ke një buxhet virtual për lagjen <strong data-emri-lagjes>tënde</strong>. Zgjidh projektet që do t'i financoje, pa e tejkaluar buxhetin.</p>
+      </div>
+    </div>
+
+    <div class="kontejner seksion">
+      <div class="voto-faqja">
+        <section aria-labelledby="projektet-titulli">
+          <h2 id="projektet-titulli" class="sr-only">Projektet në votim</h2>
+          <div class="voto-filtrat">
+            <div class="fusha">
+              <label for="voto-lagja">Lagja</label>
+              <select id="voto-lagja" name="lagja"></select>
+            </div>
+            <div class="fusha">
+              <label for="voto-kategoria">Kategoria</label>
+              <select id="voto-kategoria" name="kategoria">
+                <option value="">Të gjitha kategoritë</option>
+              </select>
+            </div>
+            <p class="voto-filtrat__numri" aria-live="polite"><span id="voto-numri-projekteve">0</span> projekte në votim</p>
+          </div>
+
+          <div class="karta buxheti-virtual">
+            <div class="buxheti-virtual__shifrat">
+              <span>Buxheti: <strong id="voto-buxheti">—</strong></span>
+              <span>Zgjedhur: <strong id="voto-shpenzuar">—</strong></span>
+              <span>Mbetur: <strong id="voto-mbetur">—</strong></span>
+            </div>
+            <!-- div me role="progressbar" në vend të <progress>, që ngjyra të ndryshojë kur buxheti tejkalohet -->
+            <!-- [html-validate-disable-next prefer-native-element] -->
+            <div id="shiriti-buxhetit" class="shiriti-buxhetit" role="progressbar" aria-label="Buxheti i zgjedhur" aria-valuemin="0" aria-valuemax="0" aria-valuenow="0">
+              <div class="shiriti-buxhetit__mbushja"></div>
+            </div>
+          </div>
+
+          <div id="lista-projekteve" class="lista-projekteve">
+            <p class="bosh">Projektet po ngarkohen…</p>
+          </div>
+        </section>
+
+        <aside id="shporta" class="shporta" aria-labelledby="shporta-titulli">
+          <button type="button" id="butoni-shporta" class="shporta__permbledhja" aria-expanded="false" aria-controls="shporta-trupi">
+            <span>Shporta <span id="shporta-numri" class="distinktivi">0</span></span>
+            <span id="shporta-totali-shkurt">—</span>
+          </button>
+          <div id="shporta-trupi" class="shporta__trupi">
+            <h2 id="shporta-titulli">Shporta jote</h2>
+            <form id="forma-votimi" action="#" method="post">
+              <ul id="shporta-lista" class="shporta__lista"></ul>
+              <p class="shporta__totali"><span>Totali</span><span id="shporta-totali">0 €</span></p>
+              <p id="shporta-mesazhi" class="shporta__mesazhi" aria-live="polite"></p>
+              <button type="submit" id="butoni-voto" class="butoni butoni--plot butoni--madh" disabled>Voto</button>
+            </form>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="kemba">
+    <div class="kontejner">
+      <div class="kemba__grid">
+        <section aria-labelledby="kemba-rreth">
+          <h2 id="kemba-rreth">Rreth projektit</h2>
+          <p>Platformë 3-në-1 për marrëdhënien e qytetarit me komunën: termini, gjurmimi i lëndës dhe buxheti pjesëmarrës.</p>
+        </section>
+        <nav aria-labelledby="kemba-modulet">
+          <h2 id="kemba-modulet">Modulet</h2>
+          <ul>
+            <li><a href="termini.html">Rezervo terminin</a></li>
+            <li><a href="lenda.html">Gjurmo lëndën</a></li>
+            <li><a href="buxheti.html">Zëri i Lagjes</a></li>
+          </ul>
+        </nav>
+        <section aria-labelledby="kemba-projekti">
+          <h2 id="kemba-projekti">Projekti</h2>
+          <ul>
+            <li>Programimi në Ueb nga ana e Klientit</li>
+            <li>FIEK · Universiteti i Prishtinës</li>
+            <li><a href="hyrja.html">Hyr ose regjistrohu</a></li>
+          </ul>
+        </section>
+      </div>
+      <p class="kemba__fundi">© <span data-viti>2026</span> Ekipi Komuna Ime · Projekt studentor. Të dhënat e termineve dhe të lëndëve janë fiktive; buxheti është nga burime publike të Komunës së Prishtinës.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.7.1.min.js"><\/script>');</script>
+  <script src="js/storage.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/algoritmet.js"></script>
+  <script src="js/voto.js"></script>
+</body>
+</html>
