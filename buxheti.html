@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buxheti i komunës | Komuna Ime</title>
+  <meta name="description" content="Buxheti 2026 i Komunës së Prishtinës i shpjeguar: kategoritë ekonomike, burimet e financimit dhe investimet sipas drejtorive.">
+  <meta name="author" content="Ekipi Komuna Ime – FIEK">
+  <meta name="theme-color" content="#1f4e8c">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-faqja="buxheti">
+  <a href="#main" class="skip-link">Kalo te përmbajtja</a>
+
+  <header class="koka">
+    <div class="kontejner koka__brenda">
+      <a class="logo" href="index.html">
+        <img src="img/logo.svg" alt="" width="32" height="32">
+        <span>Komuna Ime</span>
+      </a>
+      <button class="menu-butoni" type="button" aria-expanded="false" aria-controls="menuja">
+        <span class="menu-ikona" aria-hidden="true"></span>
+        <span class="sr-only">Hap menynë</span>
+      </button>
+      <nav id="menuja" class="menuja" aria-label="Navigimi kryesor">
+        <ul>
+          <li><a href="index.html">Ballina</a></li>
+          <li><a href="termini.html">Termini</a></li>
+          <li><a href="lenda.html">Gjurmo lëndën</a></li>
+          <li><a href="buxheti.html" aria-current="page">Zëri i Lagjes</a></li>
+          <li data-shfaq-per="zyrtar drejtues" hidden><a href="paneli-zyrtarit.html">Paneli</a></li>
+        </ul>
+        <div id="llogaria" class="llogaria">
+          <a class="butoni butoni--dyte butoni--vogel" href="hyrja.html">Hyr</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <nav class="nen-navigimi" aria-label="Moduli Zëri i Lagjes">
+    <div class="kontejner">
+      <ul>
+        <li><a href="buxheti.html" aria-current="page">Buxheti</a></li>
+        <li><a href="harta.html">Harta</a></li>
+        <li><a href="propozo.html">Propozo</a></li>
+        <li><a href="voto.html">Voto</a></li>
+        <li><a href="rezultatet.html">Rezultatet</a></li>
+        <li><a href="realizimi.html">Realizimi</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main">
+    <div class="faqja-koka">
+      <div class="kontejner">
+        <span class="mbikalimi">Zëri i Lagjes</span>
+        <h1 id="titulli-faqes">Buxheti i komunës</h1>
+        <p>Ku shkojnë paratë e Komunës së Prishtinës, nga vijnë dhe sa investohet nga secila drejtori.</p>
+      </div>
+    </div>
+
+    <div class="kontejner seksion">
+      <section aria-labelledby="buxheti-shifrat">
+        <h2 id="buxheti-shifrat" class="sr-only">Shifrat kryesore</h2>
+        <div class="treguesit">
+          <div class="treguesi">
+            <span class="treguesi__vlera" data-buxheti="totali">—</span>
+            <span class="treguesi__emri">Buxheti i planifikuar <span data-buxheti="viti">2026</span></span>
+          </div>
+          <div class="treguesi">
+            <span class="treguesi__vlera" data-buxheti="kapitale">—</span>
+            <span class="treguesi__emri">Pjesa për projekte kapitale</span>
+          </div>
+          <div class="treguesi">
+            <span class="treguesi__vlera" data-buxheti="vetanake">—</span>
+            <span class="treguesi__emri">Të hyrat vetanake të planifikuara</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="seksion" aria-labelledby="sipas-kategorive">
+        <h2 id="sipas-kategorive">Ku shkojnë paratë</h2>
+        <div class="tabela-mbajtesi">
+          <table>
+            <caption>Buxheti sipas kategorive ekonomike</caption>
+            <thead>
+              <tr>
+                <th scope="col">Kategoria</th>
+                <th scope="col" class="numer">Shuma</th>
+                <th scope="col" class="numer">Pjesa</th>
+                <th scope="col"><span class="sr-only">Grafiku</span></th>
+              </tr>
+            </thead>
+            <tbody data-tabela="kategorite">
+              <tr><td colspan="4" class="bosh">Po ngarkohet…</td></tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <th scope="row">Gjithsej</th>
+                <td class="numer" data-totali>—</td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </section>
+
+      <div class="dy-kolona">
+        <section aria-labelledby="burimet">
+          <h2 id="burimet">Nga vijnë paratë</h2>
+          <div class="tabela-mbajtesi">
+          <table>
+            <caption>Burimet e financimit</caption>
+            <thead>
+              <tr>
+                <th scope="col">Burimi</th>
+                <th scope="col" class="numer">Shuma</th>
+                <th scope="col" class="numer">Pjesa</th>
+                <th scope="col"><span class="sr-only">Grafiku</span></th>
+              </tr>
+            </thead>
+            <tbody data-tabela="burimet">
+              <tr><td colspan="4" class="bosh">Po ngarkohet…</td></tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <th scope="row">Gjithsej</th>
+                <td class="numer" data-totali>—</td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+        </section>
+        <section aria-labelledby="drejtorite">
+          <h2 id="drejtorite">Investimet sipas drejtorive</h2>
+          <div class="tabela-mbajtesi">
+          <table>
+            <caption>Projektet kapitale sipas drejtorive</caption>
+            <thead>
+              <tr>
+                <th scope="col">Drejtoria</th>
+                <th scope="col" class="numer">Shuma</th>
+                <th scope="col" class="numer">Pjesa</th>
+                <th scope="col"><span class="sr-only">Grafiku</span></th>
+              </tr>
+            </thead>
+            <tbody data-tabela="drejtorite">
+              <tr><td colspan="4" class="bosh">Po ngarkohet…</td></tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <th scope="row">Gjithsej</th>
+                <td class="numer" data-totali>—</td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+        </section>
+      </div>
+
+      <p class="fusha__ndihme">Burimi: <a href="https://prishtina.rks-gov.net/wp-content/uploads/2026/04/1.Raporti-financiar-buxhetor-i-Komunes-se-Prishtines-janar-mars-2026-TM-1-L.pdf" target="_blank" rel="noopener">Raporti financiar buxhetor i Komunës së Prishtinës, janar–mars 2026 (TM1)</a>. Investimet sipas drejtorive janë para bartjes së 5.236.513,02 € për ekzekutimin e vendimeve gjyqësore.</p>
+
+      <section class="seksion" aria-labelledby="vizualizimet">
+        <h2 id="vizualizimet">Vizualizimet</h2>
+        <div class="grid-kartash">
+          <div class="ne-ndertim">
+          <span class="ne-ndertim__faza">Faza 2</span>
+          <h3>Sankey</h3>
+          <p>Rrjedha nga burimet e financimit te kategoritë dhe drejtoritë, me SVG.</p>
+        </div>
+          <div class="ne-ndertim">
+          <span class="ne-ndertim__faza">Faza 2</span>
+          <h3>Treemap</h3>
+          <p>Drejtoritë si drejtkëndësha me sipërfaqe sa pjesa e tyre në buxhet.</p>
+        </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="kalkulatori">
+        <h2 id="kalkulatori">Kalkulatori i tatimit</h2>
+        <form id="forma-kalkulatori" class="forma" action="#" method="get">
+          <fieldset>
+            <legend>Ku shkojnë paratë e tua?</legend>
+            <div class="rreshti-fushash">
+              <div class="fusha">
+                <label for="kalkulatori-shuma">Sa tatim në pronë paguan në vit (€)?</label>
+                <input type="number" id="kalkulatori-shuma" name="shuma" min="1" step="1" inputmode="decimal" placeholder="p.sh. 120" required>
+              </div>
+            </div>
+            <div class="veprimet-e-formes">
+              <button type="submit" class="butoni" disabled>Llogarit</button>
+              <span class="fusha__ndihme">Kalkulatori aktivizohet në Fazën 2.</span>
+            </div>
+          </fieldset>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="kemba">
+    <div class="kontejner">
+      <div class="kemba__grid">
+        <section aria-labelledby="kemba-rreth">
+          <h2 id="kemba-rreth">Rreth projektit</h2>
+          <p>Platformë 3-në-1 për marrëdhënien e qytetarit me komunën: termini, gjurmimi i lëndës dhe buxheti pjesëmarrës.</p>
+        </section>
+        <nav aria-labelledby="kemba-modulet">
+          <h2 id="kemba-modulet">Modulet</h2>
+          <ul>
+            <li><a href="termini.html">Rezervo terminin</a></li>
+            <li><a href="lenda.html">Gjurmo lëndën</a></li>
+            <li><a href="buxheti.html">Zëri i Lagjes</a></li>
+          </ul>
+        </nav>
+        <section aria-labelledby="kemba-projekti">
+          <h2 id="kemba-projekti">Projekti</h2>
+          <ul>
+            <li>Programimi në Ueb nga ana e Klientit</li>
+            <li>FIEK · Universiteti i Prishtinës</li>
+            <li><a href="hyrja.html">Hyr ose regjistrohu</a></li>
+          </ul>
+        </section>
+      </div>
+      <p class="kemba__fundi">© <span data-viti>2026</span> Ekipi Komuna Ime · Projekt studentor. Të dhënat e termineve dhe të lëndëve janë fiktive; buxheti është nga burime publike të Komunës së Prishtinës.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.7.1.min.js"><\/script>');</script>
+  <script src="js/storage.js"></script>
+  <script src="js/forma.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/zeri.js"></script>
+</body>
+</html>
