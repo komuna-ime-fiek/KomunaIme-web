@@ -1,0 +1,654 @@
+{
+  "meta": {
+    "komuna": "Prishtinë",
+    "viti": 2026,
+    "totali": 151533448.5,
+    "valuta": "EUR",
+    "burimet": [
+      {
+        "titulli": "Raporti financiar buxhetor i Komunës së Prishtinës, janar–mars 2026 (TM1)",
+        "url": "https://prishtina.rks-gov.net/wp-content/uploads/2026/04/1.Raporti-financiar-buxhetor-i-Komunes-se-Prishtines-janar-mars-2026-TM-1-L.pdf"
+      },
+      {
+        "titulli": "Telegrafi: ku fokusohen investimet në buxhetin e Prishtinës për 2026",
+        "url": "https://telegrafi.com/sheshi-nenkalimi-ishulli-i-arberise-ku-fokusohen-investimet-ne-buxhetin-e-prishtines-per-2026/"
+      }
+    ],
+    "shenim": "Shifrat janë nga buxheti i planifikuar 2026 në raportin TM1. Investimet sipas drejtorive janë buxheti i projekteve kapitale para bartjes së 5.236.513,02 € për ekzekutimin e vendimeve gjyqësore. Te projektet, lagje_id plotësohet vetëm kur emri i projektit e përmend lagjen; projektet e listuara janë një përzgjedhje e projekteve të raportit."
+  },
+  "historiku": [
+    {
+      "viti": 2024,
+      "totali": 123699998
+    },
+    {
+      "viti": 2025,
+      "totali": 128100224
+    },
+    {
+      "viti": 2026,
+      "totali": 151533448.5
+    }
+  ],
+  "drejtorite": [
+    {
+      "id": "administrata",
+      "emri": "Drejtoria e Administratës"
+    },
+    {
+      "id": "financat",
+      "emri": "Drejtoria e Financave"
+    },
+    {
+      "id": "urbanizmi",
+      "emri": "Drejtoria e Urbanizmit"
+    },
+    {
+      "id": "kadastra",
+      "emri": "Drejtoria e Kadastrës"
+    },
+    {
+      "id": "zhvillimi",
+      "emri": "Drejtoria e Zhvillimit Ekonomik"
+    },
+    {
+      "id": "investimet",
+      "emri": "Drejtoria e Investimeve Kapitale dhe Menaxhimit të Kontratave"
+    },
+    {
+      "id": "sherbimet-publike",
+      "emri": "Drejtoria e Shërbimeve Publike"
+    },
+    {
+      "id": "parqet",
+      "emri": "Drejtoria e Parqeve"
+    },
+    {
+      "id": "bujqesia",
+      "emri": "Drejtoria e Bujqësisë"
+    },
+    {
+      "id": "shendetesia",
+      "emri": "Drejtoria e Shëndetësisë"
+    },
+    {
+      "id": "mireqenia",
+      "emri": "Drejtoria e Mirëqenies Sociale"
+    },
+    {
+      "id": "rezidenciale",
+      "emri": "Shërbimet Rezidenciale"
+    },
+    {
+      "id": "kultura",
+      "emri": "Drejtoria e Kulturës"
+    },
+    {
+      "id": "sporti",
+      "emri": "Drejtoria e Sportit dhe Rekreacionit"
+    },
+    {
+      "id": "arsimi",
+      "emri": "Drejtoria e Arsimit"
+    },
+    {
+      "id": "emergjencat",
+      "emri": "Menaxhimi i Katastrofave Natyrore"
+    }
+  ],
+  "kategorite_ekonomike": [
+    {
+      "id": "paga",
+      "emri": "Paga dhe mëditje",
+      "shuma": 48361456.5
+    },
+    {
+      "id": "mallra",
+      "emri": "Mallra dhe shërbime",
+      "shuma": 32000000.0
+    },
+    {
+      "id": "komunale",
+      "emri": "Shpenzime komunale",
+      "shuma": 3500000.0
+    },
+    {
+      "id": "subvencione",
+      "emri": "Subvencione dhe transfere",
+      "shuma": 6800000.0
+    },
+    {
+      "id": "kapitale",
+      "emri": "Investime kapitale",
+      "shuma": 52090478.98
+    },
+    {
+      "id": "rezerva",
+      "emri": "Rezervat",
+      "shuma": 3545000.0
+    },
+    {
+      "id": "vendime",
+      "emri": "Ekzekutimi i vendimeve gjyqësore",
+      "shuma": 5236513.02
+    }
+  ],
+  "burimet_e_financimit": [
+    {
+      "id": "pergjithshem",
+      "emri": "Granti i përgjithshëm",
+      "shuma": 63926246.5
+    },
+    {
+      "id": "arsim",
+      "emri": "Granti specifik për arsim",
+      "shuma": 30932322.0
+    },
+    {
+      "id": "shendetesi",
+      "emri": "Granti specifik për shëndetësi",
+      "shuma": 12115627.0
+    },
+    {
+      "id": "vetanake",
+      "emri": "Të hyrat vetanake",
+      "shuma": 41244772.0
+    },
+    {
+      "id": "rezidenciale",
+      "emri": "Financim për shërbime rezidenciale",
+      "shuma": 1314481.0
+    },
+    {
+      "id": "energjia",
+      "emri": "Fondi për efiçiencë të energjisë",
+      "shuma": 1953100.0
+    },
+    {
+      "id": "huamarrja",
+      "emri": "Huamarrja",
+      "shuma": 46900.0
+    }
+  ],
+  "investimet_sipas_drejtorive": [
+    {
+      "drejtoria_id": "investimet",
+      "emri": "Drejtoria e Investimeve Kapitale dhe Menaxhimit të Kontratave",
+      "shuma": 28523992.0,
+      "numri_i_projekteve": 41
+    },
+    {
+      "drejtoria_id": "sherbimet-publike",
+      "emri": "Drejtoria e Shërbimeve Publike",
+      "shuma": 6763100.0,
+      "numri_i_projekteve": 11
+    },
+    {
+      "drejtoria_id": "arsimi",
+      "emri": "Drejtoria e Arsimit",
+      "shuma": 5720000.0,
+      "numri_i_projekteve": 15
+    },
+    {
+      "drejtoria_id": "kultura",
+      "emri": "Drejtoria e Kulturës",
+      "shuma": 4418000.0,
+      "numri_i_projekteve": 6
+    },
+    {
+      "drejtoria_id": "parqet",
+      "emri": "Drejtoria e Parqeve",
+      "shuma": 3330000.0,
+      "numri_i_projekteve": 13
+    },
+    {
+      "drejtoria_id": "sporti",
+      "emri": "Drejtoria e Sportit dhe Rekreacionit",
+      "shuma": 3160000.0,
+      "numri_i_projekteve": 10
+    },
+    {
+      "drejtoria_id": "shendetesia",
+      "emri": "Drejtoria e Shëndetësisë",
+      "shuma": 1650000.0,
+      "numri_i_projekteve": 5
+    },
+    {
+      "drejtoria_id": "mireqenia",
+      "emri": "Drejtoria e Mirëqenies Sociale",
+      "shuma": 1095000.0,
+      "numri_i_projekteve": 2
+    },
+    {
+      "drejtoria_id": "bujqesia",
+      "emri": "Drejtoria e Bujqësisë",
+      "shuma": 1000000.0,
+      "numri_i_projekteve": 1
+    },
+    {
+      "drejtoria_id": "emergjencat",
+      "emri": "Menaxhimi i Katastrofave Natyrore",
+      "shuma": 740000.0,
+      "numri_i_projekteve": 3
+    },
+    {
+      "drejtoria_id": "administrata",
+      "emri": "Drejtoria e Administratës",
+      "shuma": 550000.0,
+      "numri_i_projekteve": 2
+    },
+    {
+      "drejtoria_id": "rezidenciale",
+      "emri": "Shërbimet Rezidenciale",
+      "shuma": 376900.0,
+      "numri_i_projekteve": 1
+    }
+  ],
+  "projektet_kapitale": [
+    {
+      "kodi": "53984",
+      "drejtoria_id": "investimet",
+      "emri": "Rregullimi i sheshit Xhorxh Bush",
+      "buxheti": 7000000,
+      "lagje_id": "qendra",
+      "shpenzuar_tm1": 0,
+      "bartur_per_vendime": 5000000
+    },
+    {
+      "kodi": "51052",
+      "drejtoria_id": "investimet",
+      "emri": "Rruga A, kolektori dhe rruga",
+      "buxheti": 3000000,
+      "lagje_id": null,
+      "shpenzuar_tm1": 171008.94,
+      "bartur_per_vendime": 236513.02
+    },
+    {
+      "kodi": "54444",
+      "drejtoria_id": "kultura",
+      "emri": "Salla e koncerteve – Qendra multikulturore Evropa",
+      "buxheti": 2500000,
+      "lagje_id": null,
+      "shpenzuar_tm1": 0,
+      "bartur_per_vendime": 0
+    },
+    {
+      "kodi": "54624",
+      "drejtoria_id": "investimet",
+      "emri": "Ishulli urban Arbëri – Pallati i Rinisë",
+      "buxheti": 2161589,
+      "lagje_id": "arberia",
+      "shpenzuar_tm1": 0,
+      "bartur_per_vendime": 0
+    },
+    {
+      "kodi": "53544",
+      "drejtoria_id": "sherbimet-publike",
+      "emri": "Efiçienca e energjisë në ndërtesat publike",
+      "buxheti": 1953100,
+      "lagje_id": null,
+      "shpenzuar_tm1": 0,
+      "bartur_per_vendime": 0
+    },
+    {
+      "kodi": "52580",
+      "drejtoria_id": "investimet",
+      "emri": "Nënkalimi për vetura në rrugën Agim Ramadani",
+      "buxheti": 1600000,
+      "lagje_id": "qendra",
+      "shpenzuar_tm1": 20229.75,
+      "bartur_per_vendime": 0
+    },
+    {
+      "kodi": "57229",
+      "drejtoria_id": "investimet",
+      "emri": "Kolektori në Kalabri, vazhdim",
+      "buxheti": 1000000,
+      "lagje_id": "kalabria",
+      "shpenzuar_tm1": 0,
+      "bartur_per_vendime": 0
+    },
+    {
+      "kodi": "52456",
+      "drejtoria_id": "shendetesia",
+      "emri": "Ndërtimi i Spitalit të Prishtinës",
+      "buxheti": 1000000,
+      "lagje_id": null,
+      "shpenzuar_tm1": 0,
+      "bartur_per_vendime": 0
+    },
+    {
+      "kodi": "54452",
+      "drejtoria_id": "sporti",
+      "emri": "Qendra olimpike në Breznicë",
+      "buxheti": 1000000,
+      "lagje_id": null,
+      "shpenzuar_tm1": 0,
+      "bartur_per_vendime": 0
+    },
+    {
+      "kodi": "50824",
+      "drejtoria_id": "mireqenia",
+      "emri": "Qendra multifunksionale për punë sociale",
+      "buxheti": 1000000,
+      "lagje_id": null,
+      "shpenzuar_tm1": 0,
+      "bartur_per_vendime": 0
+    },
+    {
+      "kodi": "49818",
+      "drejtoria_id": "bujqesia",
+      "emri": "Thertorja publike dhe tregu i kafshëve",
+      "buxheti": 1000000,
+      "lagje_id": null,
+      "shpenzuar_tm1": 0,
+      "bartur_per_vendime": 0
+    },
+    {
+      "kodi": "53600",
+      "drejtoria_id": "arsimi",
+      "emri": "Renovimi i shkollave fillore (Asim Vokshi, Zenel Hajdini e të tjera)",
+      "buxheti": 1000000,
+      "lagje_id": null,
+      "shpenzuar_tm1": 133741.71,
+      "bartur_per_vendime": 0
+    },
+    {
+      "kodi": "53591",
+      "drejtoria_id": "sherbimet-publike",
+      "emri": "Zgjerimi dhe modernizimi i ndriçimit publik, zonat 1 dhe 2",
+      "buxheti": 950000,
+      "lagje_id": null,
+      "shpenzuar_tm1": 0,
+      "bartur_per_vendime": 0
+    },
+    {
+      "kodi": "54627",
+      "drejtoria_id": "investimet",
+      "emri": "Tregjet e gjelbra në Ulpianë dhe prapa Komunës",
+      "buxheti": 900000,
+      "lagje_id": "ulpiana",
+      "shpenzuar_tm1": 0,
+      "bartur_per_vendime": 0
+    },
+    {
+      "kodi": "54638",
+      "drejtoria_id": "investimet",
+      "emri": "Rrugët në lagjen Kodra e Trimave",
+      "buxheti": 600000,
+      "lagje_id": "kodra-e-trimave",
+      "shpenzuar_tm1": 0,
+      "bartur_per_vendime": 0
+    },
+    {
+      "kodi": "56465",
+      "drejtoria_id": "investimet",
+      "emri": "Rrugët në lagjen Hajvali",
+      "buxheti": 600000,
+      "lagje_id": "hajvalia",
+      "shpenzuar_tm1": 75228.47,
+      "bartur_per_vendime": 0
+    },
+    {
+      "kodi": "57244",
+      "drejtoria_id": "kultura",
+      "emri": "Biblioteka dhe Memoriali i Dr. Ibrahim Rugovës",
+      "buxheti": 600000,
+      "lagje_id": null,
+      "shpenzuar_tm1": 0,
+      "bartur_per_vendime": 0
+    },
+    {
+      "kodi": "57254",
+      "drejtoria_id": "kultura",
+      "emri": "Biblioteka në Kodrën e Trimave",
+      "buxheti": 518000,
+      "lagje_id": "kodra-e-trimave",
+      "shpenzuar_tm1": 0,
+      "bartur_per_vendime": 0
+    },
+    {
+      "kodi": "57252",
+      "drejtoria_id": "investimet",
+      "emri": "Platforma (ishulli) Aktash – Qendra Studentore",
+      "buxheti": 500000,
+      "lagje_id": "aktash",
+      "shpenzuar_tm1": 0,
+      "bartur_per_vendime": 0
+    },
+    {
+      "kodi": "57257",
+      "drejtoria_id": "arsimi",
+      "emri": "Shkolla fillore në lagjen Mati",
+      "buxheti": 500000,
+      "lagje_id": "mati",
+      "shpenzuar_tm1": 0,
+      "bartur_per_vendime": 0
+    },
+    {
+      "kodi": "57259",
+      "drejtoria_id": "arsimi",
+      "emri": "Shkolla në lagjen Arbëri (Përroi i Njelmët)",
+      "buxheti": 500000,
+      "lagje_id": "arberia",
+      "shpenzuar_tm1": 0,
+      "bartur_per_vendime": 0
+    },
+    {
+      "kodi": "57248",
+      "drejtoria_id": "investimet",
+      "emri": "Rivitalizimi i platove në Dardani dhe Breg të Diellit",
+      "buxheti": 450000,
+      "lagje_id": "dardania",
+      "shpenzuar_tm1": 0,
+      "bartur_per_vendime": 0
+    },
+    {
+      "kodi": "56477",
+      "drejtoria_id": "emergjencat",
+      "emri": "Kamerat e sigurisë në kryeqytet",
+      "buxheti": 400000,
+      "lagje_id": null,
+      "shpenzuar_tm1": 0,
+      "bartur_per_vendime": 0
+    },
+    {
+      "kodi": "57251",
+      "drejtoria_id": "investimet",
+      "emri": "Projekti i Platformës Dardani – Kalabri",
+      "buxheti": 400000,
+      "lagje_id": "dardania",
+      "shpenzuar_tm1": 0,
+      "bartur_per_vendime": 0
+    },
+    {
+      "kodi": "57255",
+      "drejtoria_id": "arsimi",
+      "emri": "Çerdhja në Hajvali dhe Barilevë",
+      "buxheti": 400000,
+      "lagje_id": "hajvalia",
+      "shpenzuar_tm1": 0,
+      "bartur_per_vendime": 0
+    },
+    {
+      "kodi": "54454",
+      "drejtoria_id": "parqet",
+      "emri": "Parku në lagjen Kalabria, faza III",
+      "buxheti": 350000,
+      "lagje_id": "kalabria",
+      "shpenzuar_tm1": 0,
+      "bartur_per_vendime": 0
+    },
+    {
+      "kodi": "57240",
+      "drejtoria_id": "parqet",
+      "emri": "Parku Bardha, faza I",
+      "buxheti": 350000,
+      "lagje_id": null,
+      "shpenzuar_tm1": 0,
+      "bartur_per_vendime": 0
+    },
+    {
+      "kodi": "57245",
+      "drejtoria_id": "parqet",
+      "emri": "Parku në Arbëri, afër Komunës",
+      "buxheti": 350000,
+      "lagje_id": "arberia",
+      "shpenzuar_tm1": 0,
+      "bartur_per_vendime": 0
+    },
+    {
+      "kodi": "52657",
+      "drejtoria_id": "arsimi",
+      "emri": "Shkolla në lagjen Kalabria",
+      "buxheti": 300000,
+      "lagje_id": "kalabria",
+      "shpenzuar_tm1": 64591.91,
+      "bartur_per_vendime": 0
+    },
+    {
+      "kodi": "53589",
+      "drejtoria_id": "sherbimet-publike",
+      "emri": "Pritoret e autobusëve dhe bankat për pushim",
+      "buxheti": 300000,
+      "lagje_id": null,
+      "shpenzuar_tm1": 100000,
+      "bartur_per_vendime": 0
+    },
+    {
+      "kodi": "56462",
+      "drejtoria_id": "administrata",
+      "emri": "Sistemi për menaxhimin e dokumenteve dhe proceseve administrative",
+      "buxheti": 300000,
+      "lagje_id": null,
+      "shpenzuar_tm1": 0,
+      "bartur_per_vendime": 0
+    },
+    {
+      "kodi": "52542",
+      "drejtoria_id": "administrata",
+      "emri": "Aneksi dhe renovimi i ndërtesës së Komunës",
+      "buxheti": 250000,
+      "lagje_id": null,
+      "shpenzuar_tm1": 89780.06,
+      "bartur_per_vendime": 0
+    },
+    {
+      "kodi": "57236",
+      "drejtoria_id": "parqet",
+      "emri": "Ujitja dhe parku te Kodra e Trimave",
+      "buxheti": 200000,
+      "lagje_id": "kodra-e-trimave",
+      "shpenzuar_tm1": 0,
+      "bartur_per_vendime": 0
+    },
+    {
+      "kodi": "57232",
+      "drejtoria_id": "investimet",
+      "emri": "Rruga mbi kolektor në Kalabri",
+      "buxheti": 200000,
+      "lagje_id": "kalabria",
+      "shpenzuar_tm1": 0,
+      "bartur_per_vendime": 0
+    },
+    {
+      "kodi": "57237",
+      "drejtoria_id": "investimet",
+      "emri": "Qendra Digjitale për Menaxhimin e Trafikut",
+      "buxheti": 200000,
+      "lagje_id": null,
+      "shpenzuar_tm1": 0,
+      "bartur_per_vendime": 0
+    },
+    {
+      "kodi": "57246",
+      "drejtoria_id": "shendetesia",
+      "emri": "Inventar për objektet e shëndetësisë parësore",
+      "buxheti": 200000,
+      "lagje_id": null,
+      "shpenzuar_tm1": 99824.57,
+      "bartur_per_vendime": 0
+    },
+    {
+      "kodi": "54441",
+      "drejtoria_id": "sporti",
+      "emri": "Terreni sportiv në Hajvali, faza II",
+      "buxheti": 200000,
+      "lagje_id": "hajvalia",
+      "shpenzuar_tm1": 0,
+      "bartur_per_vendime": 0
+    },
+    {
+      "kodi": "57250",
+      "drejtoria_id": "investimet",
+      "emri": "Revitalizimi i Qendrës tregtare në Breg të Diellit",
+      "buxheti": 150000,
+      "lagje_id": "bregu-i-diellit",
+      "shpenzuar_tm1": 0,
+      "bartur_per_vendime": 0
+    },
+    {
+      "kodi": "57242",
+      "drejtoria_id": "parqet",
+      "emri": "Parku Botanik",
+      "buxheti": 150000,
+      "lagje_id": null,
+      "shpenzuar_tm1": 0,
+      "bartur_per_vendime": 0
+    },
+    {
+      "kodi": "56479",
+      "drejtoria_id": "parqet",
+      "emri": "Parku në Hajvali",
+      "buxheti": 100000,
+      "lagje_id": "hajvalia",
+      "shpenzuar_tm1": 0,
+      "bartur_per_vendime": 0
+    },
+    {
+      "kodi": "56480",
+      "drejtoria_id": "parqet",
+      "emri": "Parku në Bregun e Diellit",
+      "buxheti": 100000,
+      "lagje_id": "bregu-i-diellit",
+      "shpenzuar_tm1": 0,
+      "bartur_per_vendime": 0
+    },
+    {
+      "kodi": "54442",
+      "drejtoria_id": "sporti",
+      "emri": "Fitnes në natyrë – lagjja Kodra e Trimave",
+      "buxheti": 100000,
+      "lagje_id": "kodra-e-trimave",
+      "shpenzuar_tm1": 0,
+      "bartur_per_vendime": 0
+    },
+    {
+      "kodi": "57238",
+      "drejtoria_id": "investimet",
+      "emri": "Qendra Future Hubs për punë, inovacion dhe qasje digjitale",
+      "buxheti": 100000,
+      "lagje_id": null,
+      "shpenzuar_tm1": 0,
+      "bartur_per_vendime": 0
+    },
+    {
+      "kodi": "57231",
+      "drejtoria_id": "investimet",
+      "emri": "Intervenime infrastrukturore për persona me nevoja të veçanta",
+      "buxheti": 100000,
+      "lagje_id": null,
+      "shpenzuar_tm1": 0,
+      "bartur_per_vendime": 0
+    },
+    {
+      "kodi": "54432",
+      "drejtoria_id": "mireqenia",
+      "emri": "Qendrat sociale në Kodër të Trimave, Tophane, Aktash, Pejton dhe Ulpianë",
+      "buxheti": 95000,
+      "lagje_id": null,
+      "shpenzuar_tm1": 0,
+      "bartur_per_vendime": 0
+    }
+  ]
+}
