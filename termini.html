@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rezervo terminin | Komuna Ime</title>
+  <meta name="description" content="Rezervo online terminin në zyrat e komunës dhe merr listën e dokumenteve që duhet të sjellësh.">
+  <meta name="author" content="Ekipi Komuna Ime – FIEK">
+  <meta name="theme-color" content="#1f4e8c">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-faqja="termini">
+  <a href="#main" class="skip-link">Kalo te përmbajtja</a>
+
+  <header class="koka">
+    <div class="kontejner koka__brenda">
+      <a class="logo" href="index.html">
+        <img src="img/logo.svg" alt="" width="32" height="32">
+        <span>Komuna Ime</span>
+      </a>
+      <button class="menu-butoni" type="button" aria-expanded="false" aria-controls="menuja">
+        <span class="menu-ikona" aria-hidden="true"></span>
+        <span class="sr-only">Hap menynë</span>
+      </button>
+      <nav id="menuja" class="menuja" aria-label="Navigimi kryesor">
+        <ul>
+          <li><a href="index.html">Ballina</a></li>
+          <li><a href="termini.html" aria-current="page">Termini</a></li>
+          <li><a href="lenda.html">Gjurmo lëndën</a></li>
+          <li><a href="buxheti.html">Zëri i Lagjes</a></li>
+          <li data-shfaq-per="zyrtar drejtues" hidden><a href="paneli-zyrtarit.html">Paneli</a></li>
+        </ul>
+        <div id="llogaria" class="llogaria">
+          <a class="butoni butoni--dyte butoni--vogel" href="hyrja.html">Hyr</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <nav class="nen-navigimi" aria-label="Moduli Termini">
+    <div class="kontejner">
+      <ul>
+        <li><a href="termini.html" aria-current="page">Rezervo terminin</a></li>
+        <li><a href="radha.html">Radha live</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main">
+    <div class="faqja-koka">
+      <div class="kontejner">
+        <span class="mbikalimi">Termini</span>
+        <h1 id="titulli-faqes">Rezervo terminin</h1>
+        <p>Zgjidh shërbimin, shiko çka duhet të sjellësh dhe merr një orë të lirë në sportel.</p>
+      </div>
+    </div>
+
+    <div class="kontejner seksion">
+      <div class="termini-faqja">
+        <form id="forma-termini" class="forma" action="#" method="post" aria-describedby="termini-shenim">
+          <fieldset>
+            <legend>1. Shërbimi</legend>
+            <div class="fusha">
+              <label for="termini-sherbimi">Shërbimi</label>
+              <select id="termini-sherbimi" name="sherbim_id" required>
+                <option value="">Zgjidh shërbimin…</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>2. Data dhe ora</legend>
+            <div class="fusha">
+              <label for="termini-data">Data</label>
+              <input type="date" id="termini-data" name="data" required aria-describedby="termini-data-ndihme">
+              <p id="termini-data-ndihme" class="fusha__ndihme">Vetëm ditë pune, nga sot e tutje.</p>
+            </div>
+            <div class="fusha">
+              <span class="etiketa-fushes" id="oret-etiketa">Orët e lira</span>
+              <div class="oret" id="termini-oret" role="radiogroup" aria-labelledby="oret-etiketa">
+                <p class="bosh">Orët e lira shfaqen pasi të zgjedhësh shërbimin dhe datën.</p>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>3. Të dhënat e tua</legend>
+            <div class="rreshti-fushash">
+              <div class="fusha">
+                <label for="termini-emri">Emri dhe mbiemri</label>
+                <input type="text" id="termini-emri" name="emri" autocomplete="name" minlength="3" required>
+              </div>
+              <div class="fusha">
+                <label for="termini-email">Email</label>
+                <input type="email" id="termini-email" name="email" autocomplete="email" required>
+              </div>
+              <div class="fusha">
+                <label for="termini-telefoni">Telefoni</label>
+                <input type="tel" id="termini-telefoni" name="telefoni" autocomplete="tel" placeholder="+383 44 123 456" required>
+              </div>
+            </div>
+          </fieldset>
+
+          <div class="veprimet-e-formes">
+            <button type="submit" class="butoni butoni--madh" disabled>Rezervo terminin</button>
+            <p id="termini-shenim" class="fusha__ndihme">Rezervimi aktivizohet në Fazën 2.</p>
+          </div>
+        </form>
+
+        <aside class="karta" aria-labelledby="dokumentet-titulli">
+          <h2 id="dokumentet-titulli">Dokumentet e nevojshme</h2>
+          <ul id="termini-dokumentet">
+            <li class="bosh">Zgjidh një shërbim për të parë listën.</li>
+          </ul>
+          <dl id="termini-detajet" class="te-dhenat" hidden>
+            <dt>Koha në sportel</dt>
+            <dd id="termini-kohezgjatja">—</dd>
+            <dt>Afati për vendim</dt>
+            <dd id="termini-afati">—</dd>
+          </dl>
+          <div class="kutia-info">
+            <p><strong>Kujdes:</strong> termini mbahet 10 minuta. Pastaj lirohet për qytetarin e radhës.</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="kemba">
+    <div class="kontejner">
+      <div class="kemba__grid">
+        <section aria-labelledby="kemba-rreth">
+          <h2 id="kemba-rreth">Rreth projektit</h2>
+          <p>Platformë 3-në-1 për marrëdhënien e qytetarit me komunën: termini, gjurmimi i lëndës dhe buxheti pjesëmarrës.</p>
+        </section>
+        <nav aria-labelledby="kemba-modulet">
+          <h2 id="kemba-modulet">Modulet</h2>
+          <ul>
+            <li><a href="termini.html">Rezervo terminin</a></li>
+            <li><a href="lenda.html">Gjurmo lëndën</a></li>
+            <li><a href="buxheti.html">Zëri i Lagjes</a></li>
+          </ul>
+        </nav>
+        <section aria-labelledby="kemba-projekti">
+          <h2 id="kemba-projekti">Projekti</h2>
+          <ul>
+            <li>Programimi në Ueb nga ana e Klientit</li>
+            <li>FIEK · Universiteti i Prishtinës</li>
+            <li><a href="hyrja.html">Hyr ose regjistrohu</a></li>
+          </ul>
+        </section>
+      </div>
+      <p class="kemba__fundi">© <span data-viti>2026</span> Ekipi Komuna Ime · Projekt studentor. Të dhënat e termineve dhe të lëndëve janë fiktive; buxheti është nga burime publike të Komunës së Prishtinës.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.7.1.min.js"><\/script>');</script>
+  <script src="js/storage.js"></script>
+  <script src="js/forma.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/termini.js"></script>
+</body>
+</html>

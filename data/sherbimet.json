@@ -1,0 +1,297 @@
+{
+  "meta": {
+    "komuna": "Prishtinë",
+    "perditesuar": "2026-11-01",
+    "shenim": "Dokumentet dhe afatet e shërbimeve të urbanizmit janë nga Udhëzuesi për qytetarë i Komunës së Prishtinës (afati_burimi: 'udhezuesi'); afati për qasje në dokumente publike nga Instituti GAP ('gap'). Vlerat 'demo' janë shembuj për prototipin dhe duhen verifikuar para përdorimit real. Afatet numërohen nga dita kur dosja dorëzohet e plotë.",
+    "burimet": [
+      {
+        "titulli": "Udhëzues për qytetarë – Drejtoria e Urbanizmit, Komuna e Prishtinës",
+        "url": "https://prishtinaonline.com/uploads/udhezues_per_qytetare.pdf"
+      },
+      {
+        "titulli": "Instituti GAP – Qasja në dokumente publike",
+        "url": "https://www.institutigap.org/documents/34178_QasjaDokumentePublike2.pdf"
+      }
+    ]
+  },
+  "orari": {
+    "ditet_e_punes": [1, 2, 3, 4, 5],
+    "fillimi": "08:00",
+    "mbarimi": "16:00",
+    "pushimi": {
+      "fillimi": "12:00",
+      "mbarimi": "12:30"
+    },
+    "hapi_minuta": 15,
+    "sportelet": 4,
+    "lirohet_pas_minutash": 10
+  },
+  "sherbimet": [
+    {
+      "id": "certifikata-lindjes",
+      "emri": "Certifikatë e lindjes",
+      "drejtoria_id": "administrata",
+      "drejtoria": "Drejtoria e Administratës",
+      "dokumentet_e_nevojshme": [
+        "Letërnjoftimi ose pasaporta e vlefshme",
+        "Dëshmia e pagesës së taksës komunale"
+      ],
+      "kohezgjatja_mesatare": 10,
+      "krijon_lende": false,
+      "afati_ligjor_dite": null,
+      "afati_lloji": null,
+      "afati_burimi": null
+    },
+    {
+      "id": "certifikata-vendbanimit",
+      "emri": "Certifikatë e vendbanimit",
+      "drejtoria_id": "administrata",
+      "drejtoria": "Drejtoria e Administratës",
+      "dokumentet_e_nevojshme": [
+        "Letërnjoftimi i vlefshëm",
+        "Dëshmia e pagesës së taksës komunale"
+      ],
+      "kohezgjatja_mesatare": 10,
+      "krijon_lende": false,
+      "afati_ligjor_dite": null,
+      "afati_lloji": null,
+      "afati_burimi": null
+    },
+    {
+      "id": "certifikata-martese",
+      "emri": "Certifikatë e martesës",
+      "drejtoria_id": "administrata",
+      "drejtoria": "Drejtoria e Administratës",
+      "dokumentet_e_nevojshme": [
+        "Letërnjoftimi ose pasaporta e vlefshme",
+        "Dëshmia e pagesës së taksës komunale"
+      ],
+      "kohezgjatja_mesatare": 10,
+      "krijon_lende": false,
+      "afati_ligjor_dite": null,
+      "afati_lloji": null,
+      "afati_burimi": null
+    },
+    {
+      "id": "kopja-planit",
+      "emri": "Kopja e planit dhe certifikata e pronësisë",
+      "drejtoria_id": "kadastra",
+      "drejtoria": "Drejtoria e Kadastrës",
+      "dokumentet_e_nevojshme": [
+        "Letërnjoftimi i vlefshëm",
+        "Numri i parcelës ose zona kadastrale",
+        "Dëshmia e pagesës së taksës komunale"
+      ],
+      "kohezgjatja_mesatare": 15,
+      "krijon_lende": false,
+      "afati_ligjor_dite": null,
+      "afati_lloji": null,
+      "afati_burimi": null
+    },
+    {
+      "id": "tatimi-prones",
+      "emri": "Sqarimi dhe pagesa e tatimit në pronë",
+      "drejtoria_id": "financat",
+      "drejtoria": "Drejtoria e Financave",
+      "dokumentet_e_nevojshme": [
+        "Letërnjoftimi i vlefshëm",
+        "Fatura e tatimit në pronë, nëse e ke"
+      ],
+      "kohezgjatja_mesatare": 10,
+      "krijon_lende": false,
+      "afati_ligjor_dite": null,
+      "afati_lloji": null,
+      "afati_burimi": null
+    },
+    {
+      "id": "informata-planit",
+      "emri": "Informatë mbi planin",
+      "drejtoria_id": "urbanizmi",
+      "drejtoria": "Drejtoria e Urbanizmit",
+      "dokumentet_e_nevojshme": [
+        "Kopja e planit dhe certifikata e pronësisë, jo më të vjetra se 6 muaj",
+        "Letërnjoftimi i pronarit",
+        "Autorizimi, nëse aplikon dikush tjetër në emër të pronarit",
+        "Dëshmia e pagesës së taksës komunale"
+      ],
+      "kohezgjatja_mesatare": 20,
+      "krijon_lende": true,
+      "afati_ligjor_dite": 15,
+      "afati_lloji": "pune",
+      "afati_burimi": "udhezuesi"
+    },
+    {
+      "id": "kushtet-ndertimore-1",
+      "emri": "Kushtet ndërtimore – kategoria I",
+      "drejtoria_id": "urbanizmi",
+      "drejtoria": "Drejtoria e Urbanizmit",
+      "dokumentet_e_nevojshme": [
+        "Dokumentet e pronësisë",
+        "Certifikata e tatimit në pronë",
+        "Letërnjoftimi i pronarit",
+        "Rilevimi gjeodezik me rreze 50 m",
+        "Pëlqimi i fqinjëve, kur kërkohet",
+        "Fotografitë e lokacionit",
+        "Dëshmia e pagesës së taksës komunale"
+      ],
+      "kohezgjatja_mesatare": 30,
+      "krijon_lende": true,
+      "afati_ligjor_dite": 15,
+      "afati_lloji": "pune",
+      "afati_burimi": "udhezuesi"
+    },
+    {
+      "id": "leje-ndertimi-1",
+      "emri": "Leje ndërtimi – kategoria I",
+      "drejtoria_id": "urbanizmi",
+      "drejtoria": "Drejtoria e Urbanizmit",
+      "dokumentet_e_nevojshme": [
+        "Kushtet ndërtimore të miratuara",
+        "Rilevimi gjeodezik",
+        "Projekti kryesor (3 kopje fizike dhe 1 digjitale)",
+        "Pëlqimet e kompanive të shërbimeve publike",
+        "Tabela e kateve dhe e sipërfaqeve",
+        "Dëshmia e pagesës së taksës komunale"
+      ],
+      "kohezgjatja_mesatare": 30,
+      "krijon_lende": true,
+      "afati_ligjor_dite": 30,
+      "afati_lloji": "pune",
+      "afati_burimi": "udhezuesi"
+    },
+    {
+      "id": "leje-ndertimi-2",
+      "emri": "Leje ndërtimi – kategoria II",
+      "drejtoria_id": "urbanizmi",
+      "drejtoria": "Drejtoria e Urbanizmit",
+      "dokumentet_e_nevojshme": [
+        "Kontrata e bashkinvestimit e noterizuar",
+        "Zgjidhja urbane dhe projekti kryesor",
+        "Pëlqimet e kompanive të shërbimeve publike",
+        "Leja mjedisore komunale ose aplikimi për të",
+        "Pëlqimi për mbrojtje nga zjarri",
+        "Raporti gjeomekanik",
+        "Raporti i efiçiencës së energjisë",
+        "Dëshmia e pagesës së taksës komunale"
+      ],
+      "kohezgjatja_mesatare": 40,
+      "krijon_lende": true,
+      "afati_ligjor_dite": 45,
+      "afati_lloji": "pune",
+      "afati_burimi": "udhezuesi"
+    },
+    {
+      "id": "leje-mjedisore",
+      "emri": "Leje mjedisore komunale",
+      "drejtoria_id": "urbanizmi",
+      "drejtoria": "Drejtoria e Urbanizmit",
+      "dokumentet_e_nevojshme": [
+        "Raporti (3 kopje të shkruara dhe 1 elektronike)",
+        "Certifikata e regjistrimit të biznesit",
+        "Certifikata e pronës",
+        "Plani koordinativ",
+        "Kontrata e qirasë, nëse toka nuk është në pronësi"
+      ],
+      "kohezgjatja_mesatare": 20,
+      "krijon_lende": true,
+      "afati_ligjor_dite": 30,
+      "afati_lloji": "pune",
+      "afati_burimi": "udhezuesi"
+    },
+    {
+      "id": "licenca-biznesit",
+      "emri": "Licenca komunale e biznesit",
+      "drejtoria_id": "zhvillimi",
+      "drejtoria": "Drejtoria e Zhvillimit Ekonomik",
+      "dokumentet_e_nevojshme": [
+        "Certifikata e regjistrimit të biznesit",
+        "Letërnjoftimi i pronarit",
+        "Kontrata e qirasë ose dëshmia e pronësisë së lokalit"
+      ],
+      "kohezgjatja_mesatare": 15,
+      "krijon_lende": true,
+      "afati_ligjor_dite": 30,
+      "afati_lloji": "pune",
+      "afati_burimi": "demo"
+    },
+    {
+      "id": "ndihma-sociale",
+      "emri": "Kërkesë për ndihmë sociale",
+      "drejtoria_id": "mireqenia",
+      "drejtoria": "Drejtoria e Mirëqenies Sociale",
+      "dokumentet_e_nevojshme": [
+        "Letërnjoftimet e anëtarëve të familjes",
+        "Certifikata e bashkësisë familjare",
+        "Dëshmia për të ardhurat ose për papunësinë"
+      ],
+      "kohezgjatja_mesatare": 25,
+      "krijon_lende": true,
+      "afati_ligjor_dite": 30,
+      "afati_lloji": "pune",
+      "afati_burimi": "demo"
+    },
+    {
+      "id": "subvencione-bujqesore",
+      "emri": "Aplikim për subvencione bujqësore",
+      "drejtoria_id": "bujqesia",
+      "drejtoria": "Drejtoria e Bujqësisë",
+      "dokumentet_e_nevojshme": [
+        "Letërnjoftimi i vlefshëm",
+        "Numri identifikues i fermës (NIF)",
+        "Dokumentet e tokës ose kontrata e qirasë",
+        "Numri i llogarisë bankare"
+      ],
+      "kohezgjatja_mesatare": 20,
+      "krijon_lende": true,
+      "afati_ligjor_dite": 30,
+      "afati_lloji": "pune",
+      "afati_burimi": "demo"
+    },
+    {
+      "id": "regjistrimi-cerdhe",
+      "emri": "Regjistrimi i fëmijës në çerdhe",
+      "drejtoria_id": "arsimi",
+      "drejtoria": "Drejtoria e Arsimit",
+      "dokumentet_e_nevojshme": [
+        "Certifikata e lindjes së fëmijës",
+        "Letërnjoftimi i prindit",
+        "Vërtetimi i punësimit të prindërve, nëse kërkohet"
+      ],
+      "kohezgjatja_mesatare": 15,
+      "krijon_lende": true,
+      "afati_ligjor_dite": 15,
+      "afati_lloji": "pune",
+      "afati_burimi": "demo"
+    },
+    {
+      "id": "qasje-dokumente",
+      "emri": "Kërkesë për qasje në dokumente publike",
+      "drejtoria_id": "administrata",
+      "drejtoria": "Drejtoria e Administratës",
+      "dokumentet_e_nevojshme": [
+        "Përshkrimi i dokumentit që kërkon",
+        "Të dhënat e kontaktit"
+      ],
+      "kohezgjatja_mesatare": 10,
+      "krijon_lende": true,
+      "afati_ligjor_dite": 7,
+      "afati_lloji": "kalendarike",
+      "afati_burimi": "gap"
+    },
+    {
+      "id": "ankese",
+      "emri": "Ankesë ose kërkesë e përgjithshme",
+      "drejtoria_id": "administrata",
+      "drejtoria": "Drejtoria e Administratës",
+      "dokumentet_e_nevojshme": [
+        "Letërnjoftimi i vlefshëm",
+        "Përshkrimi i ankesës dhe dëshmitë (foto, dokumente)"
+      ],
+      "kohezgjatja_mesatare": 10,
+      "krijon_lende": true,
+      "afati_ligjor_dite": 30,
+      "afati_lloji": "pune",
+      "afati_burimi": "demo"
+    }
+  ]
+}

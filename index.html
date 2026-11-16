@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ballina | Komuna Ime</title>
+  <meta name="description" content="Komuna Ime: rezervo terminin në komunë, gjurmo lëndën me kod dhe voto projektet e lagjes me buxhet pjesëmarrës.">
+  <meta name="author" content="Ekipi Komuna Ime – FIEK">
+  <meta name="theme-color" content="#1f4e8c">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-faqja="ballina">
+  <a href="#main" class="skip-link">Kalo te përmbajtja</a>
+
+  <header class="koka">
+    <div class="kontejner koka__brenda">
+      <a class="logo" href="index.html">
+        <img src="img/logo.svg" alt="" width="32" height="32">
+        <span>Komuna Ime</span>
+      </a>
+      <button class="menu-butoni" type="button" aria-expanded="false" aria-controls="menuja">
+        <span class="menu-ikona" aria-hidden="true"></span>
+        <span class="sr-only">Hap menynë</span>
+      </button>
+      <nav id="menuja" class="menuja" aria-label="Navigimi kryesor">
+        <ul>
+          <li><a href="index.html" aria-current="page">Ballina</a></li>
+          <li><a href="termini.html">Termini</a></li>
+          <li><a href="lenda.html">Gjurmo lëndën</a></li>
+          <li><a href="buxheti.html">Zëri i Lagjes</a></li>
+          <li data-shfaq-per="zyrtar drejtues" hidden><a href="paneli-zyrtarit.html">Paneli</a></li>
+        </ul>
+        <div id="llogaria" class="llogaria">
+          <a class="butoni butoni--dyte butoni--vogel" href="hyrja.html">Hyr</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="titulli">
+      <div class="kontejner">
+        <span class="mbikalimi">Komuna e Prishtinës · prototip studentor</span>
+        <h1 id="titulli">Komuna Ime</h1>
+        <p class="hero__nentitulli">Rezervo terminin pa pritur në radhë, ndiq kërkesën tënde hap pas hapi dhe vendos vetë si shpenzohet një pjesë e buxhetit të lagjes.</p>
+        <div class="hero__veprimet">
+          <a class="butoni butoni--madh" href="termini.html">Rezervo terminin</a>
+          <a class="butoni butoni--dyte butoni--madh" href="lenda.html">Gjurmo lëndën</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="seksion" aria-labelledby="pse">
+      <div class="kontejner">
+        <div class="seksion__koka">
+          <h2 id="pse">Një vend për gjithë marrëdhënien me komunën</h2>
+          <p>Sot qytetari pret orë të tëra në sportel dhe shpesh mëson aty se i mungon një dokument. Pasi e dorëzon, kërkesa humbet në procedurë. Dhe në dëgjimet buxhetore marrin pjesë pak njerëz. Komuna Ime i lidh këto tri momente.</p>
+        </div>
+        <div class="grid-kartash">
+          <article class="karta karta-moduli">
+            <img src="img/termini.svg" alt="Kalendar me një ditë të rezervuar dhe një orë" width="640" height="360">
+            <div class="karta-moduli__trupi">
+              <span class="karta-moduli__momenti">Para shërbimit</span>
+              <h3>Termini</h3>
+              <p>Rezervo online, shih listën e dokumenteve që duhen sjellë dhe ndiq radhën live në sportel.</p>
+              <a class="butoni butoni--dyte" href="termini.html">Rezervo terminin</a>
+            </div>
+          </article>
+          <article class="karta karta-moduli">
+            <img src="img/lenda.svg" alt="Dokument me kodin e gjurmimit dhe hapat e procedurës" width="640" height="360">
+            <div class="karta-moduli__trupi">
+              <span class="karta-moduli__momenti">Pas dorëzimit</span>
+              <h3>Ku është lënda ime?</h3>
+              <p>Çdo kërkesë merr kod gjurmimi. Shih në cilën drejtori ndodhet dhe sa ditë kanë mbetur nga afati ligjor.</p>
+              <a class="butoni butoni--dyte" href="lenda.html">Gjurmo lëndën</a>
+            </div>
+          </article>
+          <article class="karta karta-moduli">
+            <img src="img/zeri.svg" alt="Hartë e lagjeve me dy pika dhe një kuti votimi" width="640" height="360">
+            <div class="karta-moduli__trupi">
+              <span class="karta-moduli__momenti">Në vendimmarrje</span>
+              <h3>Zëri i Lagjes</h3>
+              <p>Kupto buxhetin e komunës, propozo projekte për lagjen dhe voto me një buxhet virtual.</p>
+              <a class="butoni butoni--dyte" href="buxheti.html">Shiko buxhetin</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="kontejner"><hr></div>
+
+    <section class="seksion" aria-labelledby="si-funksionon">
+      <div class="kontejner">
+        <h2 id="si-funksionon">Si funksionon</h2>
+        <div class="dy-kolona">
+          <div>
+            <h3>Tre hapa, një llogari</h3>
+            <ol>
+              <li>Rezervo terminin dhe sill dokumentet e duhura që herën e parë.</li>
+              <li>Dorëzo kërkesën në sportel dhe merr kodin e gjurmimit, p.sh. <code>KI-2026-000123</code>.</li>
+              <li>Voto projektet që do të doje në lagjen tënde, brenda buxhetit virtual.</li>
+            </ol>
+          </div>
+          <div>
+            <h3>Çka mund të bësh pa ardhur në komunë</h3>
+            <ul>
+              <li>Të shohësh dokumentet e nevojshme për çdo shërbim.</li>
+              <li>Të ndjekësh afatin ligjor të kërkesës sate si numërim mbrapsht.</li>
+              <li>Të marrësh njoftim sa herë ndryshon statusi i lëndës.</li>
+              <li>Të propozosh një projekt dhe ta vendosësh në hartën e lagjes.</li>
+              <li>Të verifikosh që vota jote është numëruar, me kodin e dëftesës.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seksion seksion--i-bardhe" aria-labelledby="buxheti-shkurt">
+      <div class="kontejner">
+        <div class="seksion__koka">
+          <h2 id="buxheti-shkurt">Buxheti i Prishtinës 2026 me një shikim</h2>
+          <p>Komuna e Prishtinës ka planifikuar 151.533.448,50 € për vitin 2026. Kështu ndahen sipas kategorive ekonomike.</p>
+        </div>
+        <div class="tabela-mbajtesi">
+          <table>
+            <caption>Buxheti i planifikuar 2026 sipas kategorive ekonomike</caption>
+            <thead>
+              <tr>
+                <th scope="col">Kategoria</th>
+                <th scope="col" class="numer">Shuma</th>
+                <th scope="col" class="numer">Pjesa</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Paga dhe mëditje</th>
+                <td class="numer">48.361.456 €</td>
+                <td class="numer">31,9%</td>
+              </tr>
+              <tr>
+                <th scope="row">Mallra dhe shërbime</th>
+                <td class="numer">32.000.000 €</td>
+                <td class="numer">21,1%</td>
+              </tr>
+              <tr>
+                <th scope="row">Shpenzime komunale</th>
+                <td class="numer">3.500.000 €</td>
+                <td class="numer">2,3%</td>
+              </tr>
+              <tr>
+                <th scope="row">Subvencione dhe transfere</th>
+                <td class="numer">6.800.000 €</td>
+                <td class="numer">4,5%</td>
+              </tr>
+              <tr>
+                <th scope="row">Investime kapitale</th>
+                <td class="numer">52.090.479 €</td>
+                <td class="numer">34,4%</td>
+              </tr>
+              <tr>
+                <th scope="row">Rezervat</th>
+                <td class="numer">3.545.000 €</td>
+                <td class="numer">2,3%</td>
+              </tr>
+              <tr>
+                <th scope="row">Ekzekutimi i vendimeve gjyqësore</th>
+                <td class="numer">5.236.513 €</td>
+                <td class="numer">3,5%</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <th scope="row">Gjithsej</th>
+                <td class="numer">151.533.448,50 €</td>
+                <td class="numer">100%</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+        <p class="fusha__ndihme">Burimi: <a href="https://prishtina.rks-gov.net/wp-content/uploads/2026/04/1.Raporti-financiar-buxhetor-i-Komunes-se-Prishtines-janar-mars-2026-TM-1-L.pdf" target="_blank" rel="noopener">Raporti financiar buxhetor i Komunës së Prishtinës, janar–mars 2026 (TM1)</a>.</p>
+        <a class="butoni butoni--dyte" href="buxheti.html">Shiko buxhetin e plotë</a>
+      </div>
+    </section>
+
+    <section class="seksion" aria-labelledby="kodi">
+      <div class="kontejner dy-kolona">
+        <div>
+          <h2 id="kodi">Kodi i gjurmimit</h2>
+          <p>Çdo kërkesë e dorëzuar merr një kod unik. Me të e gjen lëndën pa u kyçur dhe sheh çdo hap të procedurës, me datë dhe orë.</p>
+          <p>Kodi ka vitin dhe një numër rendor me gjashtë shifra, prandaj e shkruan lehtë edhe në telefon.</p>
+        </div>
+        <pre><code>{
+  "kodi_gjurmimit": "KI-2026-000123",
+  "lloji": "Leje ndërtimi – kategoria I",
+  "drejtoria": "Drejtoria e Urbanizmit",
+  "statusi": "ne_shqyrtim",
+  "afati": "2026-12-14"
+}</code></pre>
+      </div>
+    </section>
+
+    <section class="seksion seksion--i-bardhe" aria-labelledby="pyetjet">
+      <div class="kontejner">
+        <h2 id="pyetjet">Pyetjet e shpeshta</h2>
+        <div class="pyetjet">
+          <div class="pyetja">
+            <h3><button type="button" class="pyetja__butoni" aria-expanded="false" aria-controls="pergjigja-1">A duhet llogari për të gjurmuar lëndën?</button></h3>
+            <div id="pergjigja-1" class="pyetja__pergjigja"><p>Jo. Mjafton kodi i gjurmimit që e merr kur dorëzon kërkesën. Me llogari merr edhe njoftime kur ndryshon statusi.</p></div>
+          </div>
+          <div class="pyetja">
+            <h3><button type="button" class="pyetja__butoni" aria-expanded="false" aria-controls="pergjigja-2">Çka ndodh nëse vonohem për terminin?</button></h3>
+            <div id="pergjigja-2" class="pyetja__pergjigja"><p>Termini mbahet 10 minuta. Pas kësaj lirohet për qytetarin e radhës dhe mund të rezervosh një orë tjetër.</p></div>
+          </div>
+          <div class="pyetja">
+            <h3><button type="button" class="pyetja__butoni" aria-expanded="false" aria-controls="pergjigja-3">A e di dikush për kë kam votuar?</button></h3>
+            <div id="pergjigja-3" class="pyetja__pergjigja"><p>Jo. Sistemi ruan veç që ke votuar, si hash. Vota ruhet më vete, pa lidhje me identitetin tënd, dhe ti e verifikon me kodin e dëftesës.</p></div>
+          </div>
+          <div class="pyetja">
+            <h3><button type="button" class="pyetja__butoni" aria-expanded="false" aria-controls="pergjigja-4">A është ky sistem zyrtar i komunës?</button></h3>
+            <div id="pergjigja-4" class="pyetja__pergjigja"><p>Jo. Komuna Ime është projekt studentor në FIEK. Buxheti merret nga raportet publike, ndërsa terminet, lëndët dhe votat janë të dhëna demo që ruhen vetëm në browser-in tënd.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seksion" aria-labelledby="lidhjet">
+      <div class="kontejner">
+        <h2 id="lidhjet">Lidhje të dobishme</h2>
+        <ul>
+          <li><a href="https://prishtina.rks-gov.net" target="_blank" rel="noopener">Komuna e Prishtinës – faqja zyrtare</a></li>
+          <li><a href="https://prishtina.rks-gov.net/wp-content/uploads/2026/04/1.Raporti-financiar-buxhetor-i-Komunes-se-Prishtines-janar-mars-2026-TM-1-L.pdf" target="_blank" rel="noopener">Raporti financiar buxhetor, janar–mars 2026</a></li>
+          <li><a href="https://prishtinaonline.com/uploads/udhezues_per_qytetare.pdf" target="_blank" rel="noopener">Udhëzues për qytetarë – Drejtoria e Urbanizmit</a></li>
+          <li><a href="https://www.institutigap.org" target="_blank" rel="noopener">Instituti GAP – monitorimi i buxheteve komunale</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="kemba">
+    <div class="kontejner">
+      <div class="kemba__grid">
+        <section aria-labelledby="kemba-rreth">
+          <h2 id="kemba-rreth">Rreth projektit</h2>
+          <p>Platformë 3-në-1 për marrëdhënien e qytetarit me komunën: termini, gjurmimi i lëndës dhe buxheti pjesëmarrës.</p>
+        </section>
+        <nav aria-labelledby="kemba-modulet">
+          <h2 id="kemba-modulet">Modulet</h2>
+          <ul>
+            <li><a href="termini.html">Rezervo terminin</a></li>
+            <li><a href="lenda.html">Gjurmo lëndën</a></li>
+            <li><a href="buxheti.html">Zëri i Lagjes</a></li>
+          </ul>
+        </nav>
+        <section aria-labelledby="kemba-projekti">
+          <h2 id="kemba-projekti">Projekti</h2>
+          <ul>
+            <li>Programimi në Ueb nga ana e Klientit</li>
+            <li>FIEK · Universiteti i Prishtinës</li>
+            <li><a href="hyrja.html">Hyr ose regjistrohu</a></li>
+          </ul>
+        </section>
+      </div>
+      <p class="kemba__fundi">© <span data-viti>2026</span> Ekipi Komuna Ime · Projekt studentor. Të dhënat e termineve dhe të lëndëve janë fiktive; buxheti është nga burime publike të Komunës së Prishtinës.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.7.1.min.js"><\/script>');</script>
+  <script src="js/storage.js"></script>
+  <script src="js/ui.js"></script>
+</body>
+</html>
