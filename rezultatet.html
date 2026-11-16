@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rezultatet e votimit | Komuna Ime</title>
+  <meta name="description" content="Rezultatet e votimit pjesëmarrës në lagjet e Prishtinës: fituesit me metodën greedy dhe Equal Shares, dhe verifikimi i dëftesës.">
+  <meta name="author" content="Ekipi Komuna Ime – FIEK">
+  <meta name="theme-color" content="#1f4e8c">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-faqja="rezultatet">
+  <a href="#main" class="skip-link">Kalo te përmbajtja</a>
+
+  <header class="koka">
+    <div class="kontejner koka__brenda">
+      <a class="logo" href="index.html">
+        <img src="img/logo.svg" alt="" width="32" height="32">
+        <span>Komuna Ime</span>
+      </a>
+      <button class="menu-butoni" type="button" aria-expanded="false" aria-controls="menuja">
+        <span class="menu-ikona" aria-hidden="true"></span>
+        <span class="sr-only">Hap menynë</span>
+      </button>
+      <nav id="menuja" class="menuja" aria-label="Navigimi kryesor">
+        <ul>
+          <li><a href="index.html">Ballina</a></li>
+          <li><a href="termini.html">Termini</a></li>
+          <li><a href="lenda.html">Gjurmo lëndën</a></li>
+          <li><a href="buxheti.html" aria-current="true">Zëri i Lagjes</a></li>
+          <li data-shfaq-per="zyrtar drejtues" hidden><a href="paneli-zyrtarit.html">Paneli</a></li>
+        </ul>
+        <div id="llogaria" class="llogaria">
+          <a class="butoni butoni--dyte butoni--vogel" href="hyrja.html">Hyr</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <nav class="nen-navigimi" aria-label="Moduli Zëri i Lagjes">
+    <div class="kontejner">
+      <ul>
+        <li><a href="buxheti.html">Buxheti</a></li>
+        <li><a href="harta.html">Harta</a></li>
+        <li><a href="propozo.html">Propozo</a></li>
+        <li><a href="voto.html">Voto</a></li>
+        <li><a href="rezultatet.html" aria-current="page">Rezultatet</a></li>
+        <li><a href="realizimi.html">Realizimi</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main">
+    <div class="faqja-koka">
+      <div class="kontejner">
+        <span class="mbikalimi">Zëri i Lagjes</span>
+        <h1 id="titulli-faqes">Rezultatet e votimit</h1>
+        <p>Projektet fituese sipas dy metodave të numërimit, dhe verifikimi që vota jote është numëruar.</p>
+      </div>
+    </div>
+
+    <div class="kontejner seksion">
+      <section aria-labelledby="fituesit">
+        <h2 id="fituesit">Projektet fituese</h2>
+        <div class="tabela-mbajtesi">
+          <table>
+            <caption>Fituesit sipas metodës greedy</caption>
+            <thead>
+              <tr>
+                <th scope="col">Projekti</th>
+                <th scope="col">Lagja</th>
+                <th scope="col" class="numer">Votat</th>
+                <th scope="col" class="numer">Kostoja</th>
+                <th scope="col">Statusi</th>
+              </tr>
+            </thead>
+            <tbody id="rezultatet-tabela">
+              <tr><td colspan="5" class="bosh">Rezultatet llogariten pasi të ketë vota (Faza 2).</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="seksion" aria-labelledby="metodat">
+        <h2 id="metodat">Dy mënyra për të numëruar</h2>
+        <div class="dy-kolona">
+          <div class="karta">
+            <h3>Greedy</h3>
+            <p>Projektet renditen sipas votave dhe financohen me radhë, derisa të mbarojë buxheti i lagjes.</p>
+          </div>
+          <div class="ne-ndertim">
+          <span class="ne-ndertim__faza">Faza 3</span>
+          <h3>Method of Equal Shares</h3>
+          <p>Buxheti ndahet në mënyrë të barabartë mes votuesve, dhe çdo projekt paguhet nga ata që e votuan. Krahasohet me greedy.</p>
+        </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="verifiko">
+        <h2 id="verifiko">Verifiko dëftesën</h2>
+        <form id="forma-defteza" class="forma" action="#" method="get" role="search" aria-label="Verifiko dëftesën e votës">
+          <fieldset>
+            <legend>Kodi i dëftesës</legend>
+            <div class="fusha">
+              <label for="defteza-kodi">Kodi që more pas votimit</label>
+              <input type="text" id="defteza-kodi" name="kodi" autocomplete="off" spellcheck="false" required>
+            </div>
+            <div class="veprimet-e-formes">
+              <button type="submit" class="butoni" disabled>Verifiko</button>
+              <span class="fusha__ndihme">Verifikimi aktivizohet në Fazën 2.</span>
+            </div>
+          </fieldset>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="kemba">
+    <div class="kontejner">
+      <div class="kemba__grid">
+        <section aria-labelledby="kemba-rreth">
+          <h2 id="kemba-rreth">Rreth projektit</h2>
+          <p>Platformë 3-në-1 për marrëdhënien e qytetarit me komunën: termini, gjurmimi i lëndës dhe buxheti pjesëmarrës.</p>
+        </section>
+        <nav aria-labelledby="kemba-modulet">
+          <h2 id="kemba-modulet">Modulet</h2>
+          <ul>
+            <li><a href="termini.html">Rezervo terminin</a></li>
+            <li><a href="lenda.html">Gjurmo lëndën</a></li>
+            <li><a href="buxheti.html">Zëri i Lagjes</a></li>
+          </ul>
+        </nav>
+        <section aria-labelledby="kemba-projekti">
+          <h2 id="kemba-projekti">Projekti</h2>
+          <ul>
+            <li>Programimi në Ueb nga ana e Klientit</li>
+            <li>FIEK · Universiteti i Prishtinës</li>
+            <li><a href="hyrja.html">Hyr ose regjistrohu</a></li>
+          </ul>
+        </section>
+      </div>
+      <p class="kemba__fundi">© <span data-viti>2026</span> Ekipi Komuna Ime · Projekt studentor. Të dhënat e termineve dhe të lëndëve janë fiktive; buxheti është nga burime publike të Komunës së Prishtinës.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.7.1.min.js"><\/script>');</script>
+  <script src="js/storage.js"></script>
+  <script src="js/forma.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/algoritmet.js"></script>
+</body>
+</html>

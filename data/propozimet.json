@@ -1,0 +1,1455 @@
+{
+  "meta": {
+    "shenim": "Propozime shembull për prototipin (statusi 'i_pranuar' = në votim). Ngarkohen në localStorage herën e parë.",
+    "kategorite": {
+      "infrastrukture": "Infrastrukturë",
+      "gjelberim": "Gjelbërim",
+      "sport": "Sport",
+      "kulture": "Kulturë",
+      "arsim": "Fëmijët dhe arsimi",
+      "siguri": "Siguri"
+    }
+  },
+  "propozimet": [
+    {
+      "id": "pro-qendra-1",
+      "lagje_id": "qendra",
+      "user_id": "u-qytetar",
+      "titulli": "Stola, hije dhe çezmë në parkun e lagjes Qendra",
+      "pershkrimi": "Stola të rinj, tenda për hije dhe një çezmë me ujë të pijshëm në hapësirën e gjelbër të lagjes.",
+      "kategoria": "gjelberim",
+      "kostoja": 16000,
+      "pika_ne_harte": {
+        "x": 401.7,
+        "y": 288.7
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-28T16:50:00.000Z"
+    },
+    {
+      "id": "pro-qendra-2",
+      "lagje_id": "qendra",
+      "user_id": "u-qytetar",
+      "titulli": "Ndriçim LED në rrugicat e lagjes Qendra",
+      "pershkrimi": "Ndriçim LED me konsum të ulët në rrugicat pa dritë, që banorët të ndihen të sigurt në mbrëmje.",
+      "kategoria": "siguri",
+      "kostoja": 14000,
+      "pika_ne_harte": {
+        "x": 380.8,
+        "y": 285.9
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-28T12:30:00.000Z"
+    },
+    {
+      "id": "pro-qendra-3",
+      "lagje_id": "qendra",
+      "user_id": "u-qytetar",
+      "titulli": "Bibliotekë e vogël e lagjes Qendra",
+      "pershkrimi": "Raft librash i mbuluar dhe kënd leximi, ku banorët i huazojnë dhe i dhurojnë librat.",
+      "kategoria": "kulture",
+      "kostoja": 9500,
+      "pika_ne_harte": {
+        "x": 399.9,
+        "y": 286.9
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-08T18:47:00.000Z"
+    },
+    {
+      "id": "pro-qendra-4",
+      "lagje_id": "qendra",
+      "user_id": "u-qytetar",
+      "titulli": "Vendkalime të sigurta te shkolla në lagjen Qendra",
+      "pershkrimi": "Vendkalime të ngritura, tabela dhe shirita që ngadalësojnë veturat pranë shkollës së lagjes.",
+      "kategoria": "siguri",
+      "kostoja": 9500,
+      "pika_ne_harte": {
+        "x": 381.2,
+        "y": 271.6
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-20T10:18:00.000Z"
+    },
+    {
+      "id": "pro-qendra-5",
+      "lagje_id": "qendra",
+      "user_id": "u-qytetar",
+      "titulli": "Shteg dhe parkim për biçikleta në lagjen Qendra",
+      "pershkrimi": "Shteg i shënuar për biçikleta dhe 20 vende parkimi pranë shkollës dhe tregut të lagjes.",
+      "kategoria": "infrastrukture",
+      "kostoja": 16000,
+      "pika_ne_harte": {
+        "x": 397.8,
+        "y": 261.5
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-24T12:03:00.000Z"
+    },
+    {
+      "id": "pro-pejton-1",
+      "lagje_id": "pejton",
+      "user_id": "u-qytetar",
+      "titulli": "Kopsht komunitar në lagjen Pejton",
+      "pershkrimi": "Parcelë e rregulluar ku banorët mbjellin perime dhe lule, me çezmë dhe depo për veglat.",
+      "kategoria": "gjelberim",
+      "kostoja": 13500,
+      "pika_ne_harte": {
+        "x": 354.4,
+        "y": 333.7
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-18T13:39:00.000Z"
+    },
+    {
+      "id": "pro-pejton-2",
+      "lagje_id": "pejton",
+      "user_id": "u-qytetar",
+      "titulli": "Bibliotekë e vogël e lagjes Pejton",
+      "pershkrimi": "Raft librash i mbuluar dhe kënd leximi, ku banorët i huazojnë dhe i dhurojnë librat.",
+      "kategoria": "kulture",
+      "kostoja": 6000,
+      "pika_ne_harte": {
+        "x": 387.4,
+        "y": 354.9
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-15T11:29:00.000Z"
+    },
+    {
+      "id": "pro-pejton-3",
+      "lagje_id": "pejton",
+      "user_id": "u-qytetar",
+      "titulli": "Ndriçim LED në rrugicat e lagjes Pejton",
+      "pershkrimi": "Ndriçim LED me konsum të ulët në rrugicat pa dritë, që banorët të ndihen të sigurt në mbrëmje.",
+      "kategoria": "siguri",
+      "kostoja": 27500,
+      "pika_ne_harte": {
+        "x": 352.9,
+        "y": 339.7
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-26T14:07:00.000Z"
+    },
+    {
+      "id": "pro-pejton-4",
+      "lagje_id": "pejton",
+      "user_id": "u-qytetar",
+      "titulli": "Kënd lojërash për fëmijë në lagjen Pejton",
+      "pershkrimi": "Lodra të sigurta me sipërfaqe të butë për fëmijët 3 deri 12 vjeç, pranë shkollës ose çerdhes.",
+      "kategoria": "arsim",
+      "kostoja": 22500,
+      "pika_ne_harte": {
+        "x": 366.2,
+        "y": 354.0
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-23T12:56:00.000Z"
+    },
+    {
+      "id": "pro-pejton-5",
+      "lagje_id": "pejton",
+      "user_id": "u-qytetar",
+      "titulli": "Fitnes në natyrë në lagjen Pejton",
+      "pershkrimi": "Pajisje për ushtrime në natyrë për të rinj dhe të moshuar, me tabela që tregojnë si përdoren.",
+      "kategoria": "sport",
+      "kostoja": 13500,
+      "pika_ne_harte": {
+        "x": 358.5,
+        "y": 329.1
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-09T13:10:00.000Z"
+    },
+    {
+      "id": "pro-tophane-1",
+      "lagje_id": "tophane",
+      "user_id": "u-qytetar",
+      "titulli": "Stola, hije dhe çezmë në parkun e lagjes Tophane",
+      "pershkrimi": "Stola të rinj, tenda për hije dhe një çezmë me ujë të pijshëm në hapësirën e gjelbër të lagjes.",
+      "kategoria": "gjelberim",
+      "kostoja": 11500,
+      "pika_ne_harte": {
+        "x": 419.4,
+        "y": 220.3
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-08T18:29:00.000Z"
+    },
+    {
+      "id": "pro-tophane-2",
+      "lagje_id": "tophane",
+      "user_id": "u-qytetar",
+      "titulli": "Fushë e vogël basketbolli në lagjen Tophane",
+      "pershkrimi": "Fushë me sipërfaqe gome, dy kosha dhe ndriçim, e hapur për të rinjtë deri në orën 22:00.",
+      "kategoria": "sport",
+      "kostoja": 26500,
+      "pika_ne_harte": {
+        "x": 445.2,
+        "y": 192.6
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-05T19:43:00.000Z"
+    },
+    {
+      "id": "pro-tophane-3",
+      "lagje_id": "tophane",
+      "user_id": "u-qytetar",
+      "titulli": "Mbjellja e 100 pemëve në lagjen Tophane",
+      "pershkrimi": "Pemë me hije përgjatë rrugëve kryesore, me ujitje të siguruar për dy vitet e para.",
+      "kategoria": "gjelberim",
+      "kostoja": 11000,
+      "pika_ne_harte": {
+        "x": 455.5,
+        "y": 214.8
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-10T10:01:00.000Z"
+    },
+    {
+      "id": "pro-tophane-4",
+      "lagje_id": "tophane",
+      "user_id": "u-qytetar",
+      "titulli": "Kënd lojërash për fëmijë në lagjen Tophane",
+      "pershkrimi": "Lodra të sigurta me sipërfaqe të butë për fëmijët 3 deri 12 vjeç, pranë shkollës ose çerdhes.",
+      "kategoria": "arsim",
+      "kostoja": 25500,
+      "pika_ne_harte": {
+        "x": 452.9,
+        "y": 211.1
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-06T16:28:00.000Z"
+    },
+    {
+      "id": "pro-tophane-5",
+      "lagje_id": "tophane",
+      "user_id": "u-qytetar",
+      "titulli": "Shteg dhe parkim për biçikleta në lagjen Tophane",
+      "pershkrimi": "Shteg i shënuar për biçikleta dhe 20 vende parkimi pranë shkollës dhe tregut të lagjes.",
+      "kategoria": "infrastrukture",
+      "kostoja": 27000,
+      "pika_ne_harte": {
+        "x": 446.2,
+        "y": 212.5
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-07T20:42:00.000Z"
+    },
+    {
+      "id": "pro-kodra-e-trimave-1",
+      "lagje_id": "kodra-e-trimave",
+      "user_id": "u-qytetar",
+      "titulli": "Mbjellja e 100 pemëve në lagjen Kodra e Trimave",
+      "pershkrimi": "Pemë me hije përgjatë rrugëve kryesore, me ujitje të siguruar për dy vitet e para.",
+      "kategoria": "gjelberim",
+      "kostoja": 17000,
+      "pika_ne_harte": {
+        "x": 479.3,
+        "y": 133.9
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-25T08:51:00.000Z"
+    },
+    {
+      "id": "pro-kodra-e-trimave-2",
+      "lagje_id": "kodra-e-trimave",
+      "user_id": "u-qytetar",
+      "titulli": "Stola, hije dhe çezmë në parkun e lagjes Kodra e Trimave",
+      "pershkrimi": "Stola të rinj, tenda për hije dhe një çezmë me ujë të pijshëm në hapësirën e gjelbër të lagjes.",
+      "kategoria": "gjelberim",
+      "kostoja": 19000,
+      "pika_ne_harte": {
+        "x": 511.8,
+        "y": 142.6
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-13T12:24:00.000Z"
+    },
+    {
+      "id": "pro-kodra-e-trimave-3",
+      "lagje_id": "kodra-e-trimave",
+      "user_id": "u-qytetar",
+      "titulli": "Rampa dhe qasje për të gjithë në lagjen Kodra e Trimave",
+      "pershkrimi": "Rampa te hyrjet e ndërtesave publike dhe te vendkalimet, që lagjja të jetë e qasshme edhe për personat me aftësi të kufizuara.",
+      "kategoria": "infrastrukture",
+      "kostoja": 15000,
+      "pika_ne_harte": {
+        "x": 519.9,
+        "y": 115.0
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-21T12:08:00.000Z"
+    },
+    {
+      "id": "pro-kodra-e-trimave-4",
+      "lagje_id": "kodra-e-trimave",
+      "user_id": "u-qytetar",
+      "titulli": "Klasë në natyrë për shkollën e lagjes Kodra e Trimave",
+      "pershkrimi": "Hapësirë me ulëse dhe tendë, ku shkolla e lagjes mban mësim dhe aktivitete jashtë klasës.",
+      "kategoria": "arsim",
+      "kostoja": 21500,
+      "pika_ne_harte": {
+        "x": 489.0,
+        "y": 123.4
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-06T14:12:00.000Z"
+    },
+    {
+      "id": "pro-kodra-e-trimave-5",
+      "lagje_id": "kodra-e-trimave",
+      "user_id": "u-qytetar",
+      "titulli": "Fitnes në natyrë në lagjen Kodra e Trimave",
+      "pershkrimi": "Pajisje për ushtrime në natyrë për të rinj dhe të moshuar, me tabela që tregojnë si përdoren.",
+      "kategoria": "sport",
+      "kostoja": 27000,
+      "pika_ne_harte": {
+        "x": 491.0,
+        "y": 141.6
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-13T19:50:00.000Z"
+    },
+    {
+      "id": "pro-kolovica-1",
+      "lagje_id": "kolovica",
+      "user_id": "u-qytetar",
+      "titulli": "Bibliotekë e vogël e lagjes Kolovica",
+      "pershkrimi": "Raft librash i mbuluar dhe kënd leximi, ku banorët i huazojnë dhe i dhurojnë librat.",
+      "kategoria": "kulture",
+      "kostoja": 7000,
+      "pika_ne_harte": {
+        "x": 599.5,
+        "y": 186.7
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-12T13:39:00.000Z"
+    },
+    {
+      "id": "pro-kolovica-2",
+      "lagje_id": "kolovica",
+      "user_id": "u-qytetar",
+      "titulli": "Kënd lojërash për fëmijë në lagjen Kolovica",
+      "pershkrimi": "Lodra të sigurta me sipërfaqe të butë për fëmijët 3 deri 12 vjeç, pranë shkollës ose çerdhes.",
+      "kategoria": "arsim",
+      "kostoja": 20500,
+      "pika_ne_harte": {
+        "x": 623.5,
+        "y": 195.2
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-10T20:23:00.000Z"
+    },
+    {
+      "id": "pro-kolovica-3",
+      "lagje_id": "kolovica",
+      "user_id": "u-qytetar",
+      "titulli": "Fitnes në natyrë në lagjen Kolovica",
+      "pershkrimi": "Pajisje për ushtrime në natyrë për të rinj dhe të moshuar, me tabela që tregojnë si përdoren.",
+      "kategoria": "sport",
+      "kostoja": 15500,
+      "pika_ne_harte": {
+        "x": 592.9,
+        "y": 195.8
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-14T13:56:00.000Z"
+    },
+    {
+      "id": "pro-kolovica-4",
+      "lagje_id": "kolovica",
+      "user_id": "u-qytetar",
+      "titulli": "Shteg dhe parkim për biçikleta në lagjen Kolovica",
+      "pershkrimi": "Shteg i shënuar për biçikleta dhe 20 vende parkimi pranë shkollës dhe tregut të lagjes.",
+      "kategoria": "infrastrukture",
+      "kostoja": 22500,
+      "pika_ne_harte": {
+        "x": 630.8,
+        "y": 173.6
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-02T19:53:00.000Z"
+    },
+    {
+      "id": "pro-kolovica-5",
+      "lagje_id": "kolovica",
+      "user_id": "u-qytetar",
+      "titulli": "Rregullimi i trotuareve në lagjen Kolovica",
+      "pershkrimi": "Trotuare të reja dhe të niveluara në rrugët ku ecin më shumë fëmijë dhe të moshuar, me ulje për karroca.",
+      "kategoria": "infrastrukture",
+      "kostoja": 39000,
+      "pika_ne_harte": {
+        "x": 631.0,
+        "y": 174.7
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-19T14:20:00.000Z"
+    },
+    {
+      "id": "pro-arberia-1",
+      "lagje_id": "arberia",
+      "user_id": "u-qytetar",
+      "titulli": "Shteg dhe parkim për biçikleta në lagjen Arbëria",
+      "pershkrimi": "Shteg i shënuar për biçikleta dhe 20 vende parkimi pranë shkollës dhe tregut të lagjes.",
+      "kategoria": "infrastrukture",
+      "kostoja": 28000,
+      "pika_ne_harte": {
+        "x": 299.1,
+        "y": 178.7
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-04T16:13:00.000Z"
+    },
+    {
+      "id": "pro-arberia-2",
+      "lagje_id": "arberia",
+      "user_id": "u-qytetar",
+      "titulli": "Fitnes në natyrë në lagjen Arbëria",
+      "pershkrimi": "Pajisje për ushtrime në natyrë për të rinj dhe të moshuar, me tabela që tregojnë si përdoren.",
+      "kategoria": "sport",
+      "kostoja": 17000,
+      "pika_ne_harte": {
+        "x": 323.5,
+        "y": 200.3
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-28T08:46:00.000Z"
+    },
+    {
+      "id": "pro-arberia-3",
+      "lagje_id": "arberia",
+      "user_id": "u-qytetar",
+      "titulli": "Vendkalime të sigurta te shkolla në lagjen Arbëria",
+      "pershkrimi": "Vendkalime të ngritura, tabela dhe shirita që ngadalësojnë veturat pranë shkollës së lagjes.",
+      "kategoria": "siguri",
+      "kostoja": 14500,
+      "pika_ne_harte": {
+        "x": 312.7,
+        "y": 198.8
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-13T13:44:00.000Z"
+    },
+    {
+      "id": "pro-arberia-4",
+      "lagje_id": "arberia",
+      "user_id": "u-qytetar",
+      "titulli": "Stola, hije dhe çezmë në parkun e lagjes Arbëria",
+      "pershkrimi": "Stola të rinj, tenda për hije dhe një çezmë me ujë të pijshëm në hapësirën e gjelbër të lagjes.",
+      "kategoria": "gjelberim",
+      "kostoja": 16000,
+      "pika_ne_harte": {
+        "x": 329.1,
+        "y": 174.4
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-23T19:22:00.000Z"
+    },
+    {
+      "id": "pro-arberia-5",
+      "lagje_id": "arberia",
+      "user_id": "u-qytetar",
+      "titulli": "Kopsht komunitar në lagjen Arbëria",
+      "pershkrimi": "Parcelë e rregulluar ku banorët mbjellin perime dhe lule, me çezmë dhe depo për veglat.",
+      "kategoria": "gjelberim",
+      "kostoja": 14000,
+      "pika_ne_harte": {
+        "x": 322.9,
+        "y": 186.7
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-17T12:30:00.000Z"
+    },
+    {
+      "id": "pro-lakrishte-1",
+      "lagje_id": "lakrishte",
+      "user_id": "u-qytetar",
+      "titulli": "Kopsht komunitar në lagjen Lakrishtë",
+      "pershkrimi": "Parcelë e rregulluar ku banorët mbjellin perime dhe lule, me çezmë dhe depo për veglat.",
+      "kategoria": "gjelberim",
+      "kostoja": 9500,
+      "pika_ne_harte": {
+        "x": 239.8,
+        "y": 288.9
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-12T19:54:00.000Z"
+    },
+    {
+      "id": "pro-lakrishte-2",
+      "lagje_id": "lakrishte",
+      "user_id": "u-qytetar",
+      "titulli": "Fushë e vogël basketbolli në lagjen Lakrishtë",
+      "pershkrimi": "Fushë me sipërfaqe gome, dy kosha dhe ndriçim, e hapur për të rinjtë deri në orën 22:00.",
+      "kategoria": "sport",
+      "kostoja": 37500,
+      "pika_ne_harte": {
+        "x": 256.8,
+        "y": 287.0
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-11T08:15:00.000Z"
+    },
+    {
+      "id": "pro-lakrishte-3",
+      "lagje_id": "lakrishte",
+      "user_id": "u-qytetar",
+      "titulli": "Shteg dhe parkim për biçikleta në lagjen Lakrishtë",
+      "pershkrimi": "Shteg i shënuar për biçikleta dhe 20 vende parkimi pranë shkollës dhe tregut të lagjes.",
+      "kategoria": "infrastrukture",
+      "kostoja": 20000,
+      "pika_ne_harte": {
+        "x": 255.6,
+        "y": 308.9
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-26T14:38:00.000Z"
+    },
+    {
+      "id": "pro-lakrishte-4",
+      "lagje_id": "lakrishte",
+      "user_id": "u-qytetar",
+      "titulli": "Vendkalime të sigurta te shkolla në lagjen Lakrishtë",
+      "pershkrimi": "Vendkalime të ngritura, tabela dhe shirita që ngadalësojnë veturat pranë shkollës së lagjes.",
+      "kategoria": "siguri",
+      "kostoja": 14000,
+      "pika_ne_harte": {
+        "x": 270.4,
+        "y": 309.6
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-06T16:12:00.000Z"
+    },
+    {
+      "id": "pro-lakrishte-5",
+      "lagje_id": "lakrishte",
+      "user_id": "u-qytetar",
+      "titulli": "Fitnes në natyrë në lagjen Lakrishtë",
+      "pershkrimi": "Pajisje për ushtrime në natyrë për të rinj dhe të moshuar, me tabela që tregojnë si përdoren.",
+      "kategoria": "sport",
+      "kostoja": 15000,
+      "pika_ne_harte": {
+        "x": 250.7,
+        "y": 301.9
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-18T13:51:00.000Z"
+    },
+    {
+      "id": "pro-dardania-1",
+      "lagje_id": "dardania",
+      "user_id": "u-qytetar",
+      "titulli": "Klasë në natyrë për shkollën e lagjes Dardania",
+      "pershkrimi": "Hapësirë me ulëse dhe tendë, ku shkolla e lagjes mban mësim dhe aktivitete jashtë klasës.",
+      "kategoria": "arsim",
+      "kostoja": 19000,
+      "pika_ne_harte": {
+        "x": 330.8,
+        "y": 387.1
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-04T11:51:00.000Z"
+    },
+    {
+      "id": "pro-dardania-2",
+      "lagje_id": "dardania",
+      "user_id": "u-qytetar",
+      "titulli": "Fitnes në natyrë në lagjen Dardania",
+      "pershkrimi": "Pajisje për ushtrime në natyrë për të rinj dhe të moshuar, me tabela që tregojnë si përdoren.",
+      "kategoria": "sport",
+      "kostoja": 19000,
+      "pika_ne_harte": {
+        "x": 323.2,
+        "y": 376.0
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-04T19:36:00.000Z"
+    },
+    {
+      "id": "pro-dardania-3",
+      "lagje_id": "dardania",
+      "user_id": "u-qytetar",
+      "titulli": "Shteg dhe parkim për biçikleta në lagjen Dardania",
+      "pershkrimi": "Shteg i shënuar për biçikleta dhe 20 vende parkimi pranë shkollës dhe tregut të lagjes.",
+      "kategoria": "infrastrukture",
+      "kostoja": 26000,
+      "pika_ne_harte": {
+        "x": 331.9,
+        "y": 391.4
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-05T11:25:00.000Z"
+    },
+    {
+      "id": "pro-dardania-4",
+      "lagje_id": "dardania",
+      "user_id": "u-qytetar",
+      "titulli": "Ndriçim LED në rrugicat e lagjes Dardania",
+      "pershkrimi": "Ndriçim LED me konsum të ulët në rrugicat pa dritë, që banorët të ndihen të sigurt në mbrëmje.",
+      "kategoria": "siguri",
+      "kostoja": 20500,
+      "pika_ne_harte": {
+        "x": 338.4,
+        "y": 402.9
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-06T16:05:00.000Z"
+    },
+    {
+      "id": "pro-dardania-5",
+      "lagje_id": "dardania",
+      "user_id": "u-qytetar",
+      "titulli": "Kënd lojërash për fëmijë në lagjen Dardania",
+      "pershkrimi": "Lodra të sigurta me sipërfaqe të butë për fëmijët 3 deri 12 vjeç, pranë shkollës ose çerdhes.",
+      "kategoria": "arsim",
+      "kostoja": 32000,
+      "pika_ne_harte": {
+        "x": 314.0,
+        "y": 377.3
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-19T15:06:00.000Z"
+    },
+    {
+      "id": "pro-ulpiana-1",
+      "lagje_id": "ulpiana",
+      "user_id": "u-qytetar",
+      "titulli": "Rregullimi i trotuareve në lagjen Ulpiana",
+      "pershkrimi": "Trotuare të reja dhe të niveluara në rrugët ku ecin më shumë fëmijë dhe të moshuar, me ulje për karroca.",
+      "kategoria": "infrastrukture",
+      "kostoja": 41000,
+      "pika_ne_harte": {
+        "x": 413.5,
+        "y": 405.2
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-12T12:44:00.000Z"
+    },
+    {
+      "id": "pro-ulpiana-2",
+      "lagje_id": "ulpiana",
+      "user_id": "u-qytetar",
+      "titulli": "Mbjellja e 100 pemëve në lagjen Ulpiana",
+      "pershkrimi": "Pemë me hije përgjatë rrugëve kryesore, me ujitje të siguruar për dy vitet e para.",
+      "kategoria": "gjelberim",
+      "kostoja": 11500,
+      "pika_ne_harte": {
+        "x": 444.1,
+        "y": 411.7
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-16T09:49:00.000Z"
+    },
+    {
+      "id": "pro-ulpiana-3",
+      "lagje_id": "ulpiana",
+      "user_id": "u-qytetar",
+      "titulli": "Rampa dhe qasje për të gjithë në lagjen Ulpiana",
+      "pershkrimi": "Rampa te hyrjet e ndërtesave publike dhe te vendkalimet, që lagjja të jetë e qasshme edhe për personat me aftësi të kufizuara.",
+      "kategoria": "infrastrukture",
+      "kostoja": 8000,
+      "pika_ne_harte": {
+        "x": 413.3,
+        "y": 407.8
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-28T08:57:00.000Z"
+    },
+    {
+      "id": "pro-ulpiana-4",
+      "lagje_id": "ulpiana",
+      "user_id": "u-qytetar",
+      "titulli": "Kënd lojërash për fëmijë në lagjen Ulpiana",
+      "pershkrimi": "Lodra të sigurta me sipërfaqe të butë për fëmijët 3 deri 12 vjeç, pranë shkollës ose çerdhes.",
+      "kategoria": "arsim",
+      "kostoja": 26500,
+      "pika_ne_harte": {
+        "x": 426.4,
+        "y": 391.1
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-26T15:50:00.000Z"
+    },
+    {
+      "id": "pro-ulpiana-5",
+      "lagje_id": "ulpiana",
+      "user_id": "u-qytetar",
+      "titulli": "Vendkalime të sigurta te shkolla në lagjen Ulpiana",
+      "pershkrimi": "Vendkalime të ngritura, tabela dhe shirita që ngadalësojnë veturat pranë shkollës së lagjes.",
+      "kategoria": "siguri",
+      "kostoja": 15000,
+      "pika_ne_harte": {
+        "x": 426.1,
+        "y": 386.4
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-05T19:05:00.000Z"
+    },
+    {
+      "id": "pro-aktash-1",
+      "lagje_id": "aktash",
+      "user_id": "u-qytetar",
+      "titulli": "Ndriçim LED në rrugicat e lagjes Aktash",
+      "pershkrimi": "Ndriçim LED me konsum të ulët në rrugicat pa dritë, që banorët të ndihen të sigurt në mbrëmje.",
+      "kategoria": "siguri",
+      "kostoja": 16000,
+      "pika_ne_harte": {
+        "x": 509.0,
+        "y": 286.8
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-14T09:27:00.000Z"
+    },
+    {
+      "id": "pro-aktash-2",
+      "lagje_id": "aktash",
+      "user_id": "u-qytetar",
+      "titulli": "Kënd lojërash për fëmijë në lagjen Aktash",
+      "pershkrimi": "Lodra të sigurta me sipërfaqe të butë për fëmijët 3 deri 12 vjeç, pranë shkollës ose çerdhes.",
+      "kategoria": "arsim",
+      "kostoja": 22500,
+      "pika_ne_harte": {
+        "x": 483.5,
+        "y": 297.4
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-13T16:25:00.000Z"
+    },
+    {
+      "id": "pro-aktash-3",
+      "lagje_id": "aktash",
+      "user_id": "u-qytetar",
+      "titulli": "Kopsht komunitar në lagjen Aktash",
+      "pershkrimi": "Parcelë e rregulluar ku banorët mbjellin perime dhe lule, me çezmë dhe depo për veglat.",
+      "kategoria": "gjelberim",
+      "kostoja": 12500,
+      "pika_ne_harte": {
+        "x": 512.0,
+        "y": 315.9
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-23T08:26:00.000Z"
+    },
+    {
+      "id": "pro-aktash-4",
+      "lagje_id": "aktash",
+      "user_id": "u-qytetar",
+      "titulli": "Mbjellja e 100 pemëve në lagjen Aktash",
+      "pershkrimi": "Pemë me hije përgjatë rrugëve kryesore, me ujitje të siguruar për dy vitet e para.",
+      "kategoria": "gjelberim",
+      "kostoja": 11000,
+      "pika_ne_harte": {
+        "x": 473.3,
+        "y": 299.5
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-05T20:23:00.000Z"
+    },
+    {
+      "id": "pro-aktash-5",
+      "lagje_id": "aktash",
+      "user_id": "u-qytetar",
+      "titulli": "Fushë e vogël basketbolli në lagjen Aktash",
+      "pershkrimi": "Fushë me sipërfaqe gome, dy kosha dhe ndriçim, e hapur për të rinjtë deri në orën 22:00.",
+      "kategoria": "sport",
+      "kostoja": 31500,
+      "pika_ne_harte": {
+        "x": 495.6,
+        "y": 317.8
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-27T18:14:00.000Z"
+    },
+    {
+      "id": "pro-velania-1",
+      "lagje_id": "velania",
+      "user_id": "u-qytetar",
+      "titulli": "Vendkalime të sigurta te shkolla në lagjen Velania",
+      "pershkrimi": "Vendkalime të ngritura, tabela dhe shirita që ngadalësojnë veturat pranë shkollës së lagjes.",
+      "kategoria": "siguri",
+      "kostoja": 14500,
+      "pika_ne_harte": {
+        "x": 603.9,
+        "y": 281.7
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-23T19:59:00.000Z"
+    },
+    {
+      "id": "pro-velania-2",
+      "lagje_id": "velania",
+      "user_id": "u-qytetar",
+      "titulli": "Fitnes në natyrë në lagjen Velania",
+      "pershkrimi": "Pajisje për ushtrime në natyrë për të rinj dhe të moshuar, me tabela që tregojnë si përdoren.",
+      "kategoria": "sport",
+      "kostoja": 19500,
+      "pika_ne_harte": {
+        "x": 578.7,
+        "y": 290.1
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-11T10:34:00.000Z"
+    },
+    {
+      "id": "pro-velania-3",
+      "lagje_id": "velania",
+      "user_id": "u-qytetar",
+      "titulli": "Rregullimi i trotuareve në lagjen Velania",
+      "pershkrimi": "Trotuare të reja dhe të niveluara në rrugët ku ecin më shumë fëmijë dhe të moshuar, me ulje për karroca.",
+      "kategoria": "infrastrukture",
+      "kostoja": 30500,
+      "pika_ne_harte": {
+        "x": 580.1,
+        "y": 285.8
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-16T17:44:00.000Z"
+    },
+    {
+      "id": "pro-velania-4",
+      "lagje_id": "velania",
+      "user_id": "u-qytetar",
+      "titulli": "Kopsht komunitar në lagjen Velania",
+      "pershkrimi": "Parcelë e rregulluar ku banorët mbjellin perime dhe lule, me çezmë dhe depo për veglat.",
+      "kategoria": "gjelberim",
+      "kostoja": 8500,
+      "pika_ne_harte": {
+        "x": 578.6,
+        "y": 278.7
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-24T17:28:00.000Z"
+    },
+    {
+      "id": "pro-velania-5",
+      "lagje_id": "velania",
+      "user_id": "u-qytetar",
+      "titulli": "Fushë e vogël basketbolli në lagjen Velania",
+      "pershkrimi": "Fushë me sipërfaqe gome, dy kosha dhe ndriçim, e hapur për të rinjtë deri në orën 22:00.",
+      "kategoria": "sport",
+      "kostoja": 32000,
+      "pika_ne_harte": {
+        "x": 594.0,
+        "y": 285.3
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-10T16:45:00.000Z"
+    },
+    {
+      "id": "pro-bregu-i-diellit-1",
+      "lagje_id": "bregu-i-diellit",
+      "user_id": "u-qytetar",
+      "titulli": "Rampa dhe qasje për të gjithë në lagjen Bregu i Diellit",
+      "pershkrimi": "Rampa te hyrjet e ndërtesave publike dhe te vendkalimet, që lagjja të jetë e qasshme edhe për personat me aftësi të kufizuara.",
+      "kategoria": "infrastrukture",
+      "kostoja": 14000,
+      "pika_ne_harte": {
+        "x": 543.3,
+        "y": 398.9
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-25T08:02:00.000Z"
+    },
+    {
+      "id": "pro-bregu-i-diellit-2",
+      "lagje_id": "bregu-i-diellit",
+      "user_id": "u-qytetar",
+      "titulli": "Ndriçim LED në rrugicat e lagjes Bregu i Diellit",
+      "pershkrimi": "Ndriçim LED me konsum të ulët në rrugicat pa dritë, që banorët të ndihen të sigurt në mbrëmje.",
+      "kategoria": "siguri",
+      "kostoja": 20000,
+      "pika_ne_harte": {
+        "x": 568.0,
+        "y": 380.9
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-01T14:14:00.000Z"
+    },
+    {
+      "id": "pro-bregu-i-diellit-3",
+      "lagje_id": "bregu-i-diellit",
+      "user_id": "u-qytetar",
+      "titulli": "Skenë e hapur për ngjarje në lagjen Bregu i Diellit",
+      "pershkrimi": "Skenë e vogël me ndriçim për koncerte, shfaqje të fëmijëve dhe takime të banorëve.",
+      "kategoria": "kulture",
+      "kostoja": 16500,
+      "pika_ne_harte": {
+        "x": 536.6,
+        "y": 407.9
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-20T12:17:00.000Z"
+    },
+    {
+      "id": "pro-bregu-i-diellit-4",
+      "lagje_id": "bregu-i-diellit",
+      "user_id": "u-qytetar",
+      "titulli": "Shteg dhe parkim për biçikleta në lagjen Bregu i Diellit",
+      "pershkrimi": "Shteg i shënuar për biçikleta dhe 20 vende parkimi pranë shkollës dhe tregut të lagjes.",
+      "kategoria": "infrastrukture",
+      "kostoja": 31500,
+      "pika_ne_harte": {
+        "x": 570.4,
+        "y": 395.4
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-17T10:06:00.000Z"
+    },
+    {
+      "id": "pro-bregu-i-diellit-5",
+      "lagje_id": "bregu-i-diellit",
+      "user_id": "u-qytetar",
+      "titulli": "Fushë e vogël basketbolli në lagjen Bregu i Diellit",
+      "pershkrimi": "Fushë me sipërfaqe gome, dy kosha dhe ndriçim, e hapur për të rinjtë deri në orën 22:00.",
+      "kategoria": "sport",
+      "kostoja": 32500,
+      "pika_ne_harte": {
+        "x": 533.2,
+        "y": 386.1
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-14T11:57:00.000Z"
+    },
+    {
+      "id": "pro-kalabria-1",
+      "lagje_id": "kalabria",
+      "user_id": "u-qytetar",
+      "titulli": "Klasë në natyrë për shkollën e lagjes Kalabria",
+      "pershkrimi": "Hapësirë me ulëse dhe tendë, ku shkolla e lagjes mban mësim dhe aktivitete jashtë klasës.",
+      "kategoria": "arsim",
+      "kostoja": 13500,
+      "pika_ne_harte": {
+        "x": 215.6,
+        "y": 440.1
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-15T08:13:00.000Z"
+    },
+    {
+      "id": "pro-kalabria-2",
+      "lagje_id": "kalabria",
+      "user_id": "u-qytetar",
+      "titulli": "Kopsht komunitar në lagjen Kalabria",
+      "pershkrimi": "Parcelë e rregulluar ku banorët mbjellin perime dhe lule, me çezmë dhe depo për veglat.",
+      "kategoria": "gjelberim",
+      "kostoja": 13500,
+      "pika_ne_harte": {
+        "x": 245.5,
+        "y": 405.3
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-06T13:57:00.000Z"
+    },
+    {
+      "id": "pro-kalabria-3",
+      "lagje_id": "kalabria",
+      "user_id": "u-qytetar",
+      "titulli": "Skenë e hapur për ngjarje në lagjen Kalabria",
+      "pershkrimi": "Skenë e vogël me ndriçim për koncerte, shfaqje të fëmijëve dhe takime të banorëve.",
+      "kategoria": "kulture",
+      "kostoja": 24500,
+      "pika_ne_harte": {
+        "x": 243.2,
+        "y": 406.8
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-27T16:59:00.000Z"
+    },
+    {
+      "id": "pro-kalabria-4",
+      "lagje_id": "kalabria",
+      "user_id": "u-qytetar",
+      "titulli": "Fushë e vogël basketbolli në lagjen Kalabria",
+      "pershkrimi": "Fushë me sipërfaqe gome, dy kosha dhe ndriçim, e hapur për të rinjtë deri në orën 22:00.",
+      "kategoria": "sport",
+      "kostoja": 36000,
+      "pika_ne_harte": {
+        "x": 247.8,
+        "y": 407.8
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-21T12:13:00.000Z"
+    },
+    {
+      "id": "pro-kalabria-5",
+      "lagje_id": "kalabria",
+      "user_id": "u-qytetar",
+      "titulli": "Shteg dhe parkim për biçikleta në lagjen Kalabria",
+      "pershkrimi": "Shteg i shënuar për biçikleta dhe 20 vende parkimi pranë shkollës dhe tregut të lagjes.",
+      "kategoria": "infrastrukture",
+      "kostoja": 26000,
+      "pika_ne_harte": {
+        "x": 228.8,
+        "y": 436.7
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-27T11:15:00.000Z"
+    },
+    {
+      "id": "pro-mati-1",
+      "lagje_id": "mati",
+      "user_id": "u-qytetar",
+      "titulli": "Kopsht komunitar në lagjen Mati",
+      "pershkrimi": "Parcelë e rregulluar ku banorët mbjellin perime dhe lule, me çezmë dhe depo për veglat.",
+      "kategoria": "gjelberim",
+      "kostoja": 9500,
+      "pika_ne_harte": {
+        "x": 372.0,
+        "y": 468.7
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-24T14:32:00.000Z"
+    },
+    {
+      "id": "pro-mati-2",
+      "lagje_id": "mati",
+      "user_id": "u-qytetar",
+      "titulli": "Klasë në natyrë për shkollën e lagjes Mati",
+      "pershkrimi": "Hapësirë me ulëse dhe tendë, ku shkolla e lagjes mban mësim dhe aktivitete jashtë klasës.",
+      "kategoria": "arsim",
+      "kostoja": 15500,
+      "pika_ne_harte": {
+        "x": 388.1,
+        "y": 450.7
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-15T16:09:00.000Z"
+    },
+    {
+      "id": "pro-mati-3",
+      "lagje_id": "mati",
+      "user_id": "u-qytetar",
+      "titulli": "Skenë e hapur për ngjarje në lagjen Mati",
+      "pershkrimi": "Skenë e vogël me ndriçim për koncerte, shfaqje të fëmijëve dhe takime të banorëve.",
+      "kategoria": "kulture",
+      "kostoja": 17000,
+      "pika_ne_harte": {
+        "x": 354.5,
+        "y": 461.5
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-08T08:42:00.000Z"
+    },
+    {
+      "id": "pro-mati-4",
+      "lagje_id": "mati",
+      "user_id": "u-qytetar",
+      "titulli": "Rregullimi i trotuareve në lagjen Mati",
+      "pershkrimi": "Trotuare të reja dhe të niveluara në rrugët ku ecin më shumë fëmijë dhe të moshuar, me ulje për karroca.",
+      "kategoria": "infrastrukture",
+      "kostoja": 35500,
+      "pika_ne_harte": {
+        "x": 357.0,
+        "y": 483.4
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-11T18:31:00.000Z"
+    },
+    {
+      "id": "pro-mati-5",
+      "lagje_id": "mati",
+      "user_id": "u-qytetar",
+      "titulli": "Ndriçim LED në rrugicat e lagjes Mati",
+      "pershkrimi": "Ndriçim LED me konsum të ulët në rrugicat pa dritë, që banorët të ndihen të sigurt në mbrëmje.",
+      "kategoria": "siguri",
+      "kostoja": 27500,
+      "pika_ne_harte": {
+        "x": 376.4,
+        "y": 484.8
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-08T11:19:00.000Z"
+    },
+    {
+      "id": "pro-prishtina-e-re-1",
+      "lagje_id": "prishtina-e-re",
+      "user_id": "u-qytetar",
+      "titulli": "Stola, hije dhe çezmë në parkun e lagjes Prishtina e Re",
+      "pershkrimi": "Stola të rinj, tenda për hije dhe një çezmë me ujë të pijshëm në hapësirën e gjelbër të lagjes.",
+      "kategoria": "gjelberim",
+      "kostoja": 12000,
+      "pika_ne_harte": {
+        "x": 266.1,
+        "y": 535.2
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-11T13:49:00.000Z"
+    },
+    {
+      "id": "pro-prishtina-e-re-2",
+      "lagje_id": "prishtina-e-re",
+      "user_id": "u-qytetar",
+      "titulli": "Klasë në natyrë për shkollën e lagjes Prishtina e Re",
+      "pershkrimi": "Hapësirë me ulëse dhe tendë, ku shkolla e lagjes mban mësim dhe aktivitete jashtë klasës.",
+      "kategoria": "arsim",
+      "kostoja": 17000,
+      "pika_ne_harte": {
+        "x": 263.2,
+        "y": 538.9
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-09T13:57:00.000Z"
+    },
+    {
+      "id": "pro-prishtina-e-re-3",
+      "lagje_id": "prishtina-e-re",
+      "user_id": "u-qytetar",
+      "titulli": "Skenë e hapur për ngjarje në lagjen Prishtina e Re",
+      "pershkrimi": "Skenë e vogël me ndriçim për koncerte, shfaqje të fëmijëve dhe takime të banorëve.",
+      "kategoria": "kulture",
+      "kostoja": 15500,
+      "pika_ne_harte": {
+        "x": 281.8,
+        "y": 523.5
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-09T17:19:00.000Z"
+    },
+    {
+      "id": "pro-prishtina-e-re-4",
+      "lagje_id": "prishtina-e-re",
+      "user_id": "u-qytetar",
+      "titulli": "Bibliotekë e vogël e lagjes Prishtina e Re",
+      "pershkrimi": "Raft librash i mbuluar dhe kënd leximi, ku banorët i huazojnë dhe i dhurojnë librat.",
+      "kategoria": "kulture",
+      "kostoja": 9500,
+      "pika_ne_harte": {
+        "x": 261.6,
+        "y": 535.7
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-19T15:04:00.000Z"
+    },
+    {
+      "id": "pro-prishtina-e-re-5",
+      "lagje_id": "prishtina-e-re",
+      "user_id": "u-qytetar",
+      "titulli": "Vendkalime të sigurta te shkolla në lagjen Prishtina e Re",
+      "pershkrimi": "Vendkalime të ngritura, tabela dhe shirita që ngadalësojnë veturat pranë shkollës së lagjes.",
+      "kategoria": "siguri",
+      "kostoja": 11000,
+      "pika_ne_harte": {
+        "x": 291.1,
+        "y": 518.5
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-20T12:35:00.000Z"
+    },
+    {
+      "id": "pro-sofalia-1",
+      "lagje_id": "sofalia",
+      "user_id": "u-qytetar",
+      "titulli": "Kopsht komunitar në lagjen Sofalia",
+      "pershkrimi": "Parcelë e rregulluar ku banorët mbjellin perime dhe lule, me çezmë dhe depo për veglat.",
+      "kategoria": "gjelberim",
+      "kostoja": 15000,
+      "pika_ne_harte": {
+        "x": 473.7,
+        "y": 494.8
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-04T13:10:00.000Z"
+    },
+    {
+      "id": "pro-sofalia-2",
+      "lagje_id": "sofalia",
+      "user_id": "u-qytetar",
+      "titulli": "Mbjellja e 100 pemëve në lagjen Sofalia",
+      "pershkrimi": "Pemë me hije përgjatë rrugëve kryesore, me ujitje të siguruar për dy vitet e para.",
+      "kategoria": "gjelberim",
+      "kostoja": 8500,
+      "pika_ne_harte": {
+        "x": 477.1,
+        "y": 486.5
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-28T12:03:00.000Z"
+    },
+    {
+      "id": "pro-sofalia-3",
+      "lagje_id": "sofalia",
+      "user_id": "u-qytetar",
+      "titulli": "Rregullimi i trotuareve në lagjen Sofalia",
+      "pershkrimi": "Trotuare të reja dhe të niveluara në rrugët ku ecin më shumë fëmijë dhe të moshuar, me ulje për karroca.",
+      "kategoria": "infrastrukture",
+      "kostoja": 33500,
+      "pika_ne_harte": {
+        "x": 476.6,
+        "y": 488.1
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-06T20:29:00.000Z"
+    },
+    {
+      "id": "pro-sofalia-4",
+      "lagje_id": "sofalia",
+      "user_id": "u-qytetar",
+      "titulli": "Ndriçim LED në rrugicat e lagjes Sofalia",
+      "pershkrimi": "Ndriçim LED me konsum të ulët në rrugicat pa dritë, që banorët të ndihen të sigurt në mbrëmje.",
+      "kategoria": "siguri",
+      "kostoja": 12000,
+      "pika_ne_harte": {
+        "x": 473.6,
+        "y": 491.8
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-20T12:52:00.000Z"
+    },
+    {
+      "id": "pro-sofalia-5",
+      "lagje_id": "sofalia",
+      "user_id": "u-qytetar",
+      "titulli": "Kënd lojërash për fëmijë në lagjen Sofalia",
+      "pershkrimi": "Lodra të sigurta me sipërfaqe të butë për fëmijët 3 deri 12 vjeç, pranë shkollës ose çerdhes.",
+      "kategoria": "arsim",
+      "kostoja": 29500,
+      "pika_ne_harte": {
+        "x": 490.7,
+        "y": 469.2
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-23T12:27:00.000Z"
+    },
+    {
+      "id": "pro-veternik-1",
+      "lagje_id": "veternik",
+      "user_id": "u-qytetar",
+      "titulli": "Fitnes në natyrë në lagjen Veternik",
+      "pershkrimi": "Pajisje për ushtrime në natyrë për të rinj dhe të moshuar, me tabela që tregojnë si përdoren.",
+      "kategoria": "sport",
+      "kostoja": 15000,
+      "pika_ne_harte": {
+        "x": 408.3,
+        "y": 563.3
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-02T08:27:00.000Z"
+    },
+    {
+      "id": "pro-veternik-2",
+      "lagje_id": "veternik",
+      "user_id": "u-qytetar",
+      "titulli": "Bibliotekë e vogël e lagjes Veternik",
+      "pershkrimi": "Raft librash i mbuluar dhe kënd leximi, ku banorët i huazojnë dhe i dhurojnë librat.",
+      "kategoria": "kulture",
+      "kostoja": 10500,
+      "pika_ne_harte": {
+        "x": 383.1,
+        "y": 552.3
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-09T15:53:00.000Z"
+    },
+    {
+      "id": "pro-veternik-3",
+      "lagje_id": "veternik",
+      "user_id": "u-qytetar",
+      "titulli": "Stola, hije dhe çezmë në parkun e lagjes Veternik",
+      "pershkrimi": "Stola të rinj, tenda për hije dhe një çezmë me ujë të pijshëm në hapësirën e gjelbër të lagjes.",
+      "kategoria": "gjelberim",
+      "kostoja": 22500,
+      "pika_ne_harte": {
+        "x": 413.7,
+        "y": 554.1
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-04T18:24:00.000Z"
+    },
+    {
+      "id": "pro-veternik-4",
+      "lagje_id": "veternik",
+      "user_id": "u-qytetar",
+      "titulli": "Rampa dhe qasje për të gjithë në lagjen Veternik",
+      "pershkrimi": "Rampa te hyrjet e ndërtesave publike dhe te vendkalimet, që lagjja të jetë e qasshme edhe për personat me aftësi të kufizuara.",
+      "kategoria": "infrastrukture",
+      "kostoja": 11000,
+      "pika_ne_harte": {
+        "x": 399.9,
+        "y": 566.5
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-16T20:57:00.000Z"
+    },
+    {
+      "id": "pro-veternik-5",
+      "lagje_id": "veternik",
+      "user_id": "u-qytetar",
+      "titulli": "Klasë në natyrë për shkollën e lagjes Veternik",
+      "pershkrimi": "Hapësirë me ulëse dhe tendë, ku shkolla e lagjes mban mësim dhe aktivitete jashtë klasës.",
+      "kategoria": "arsim",
+      "kostoja": 12000,
+      "pika_ne_harte": {
+        "x": 401.7,
+        "y": 579.2
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-09T18:42:00.000Z"
+    },
+    {
+      "id": "pro-hajvalia-1",
+      "lagje_id": "hajvalia",
+      "user_id": "u-qytetar",
+      "titulli": "Kopsht komunitar në lagjen Hajvalia",
+      "pershkrimi": "Parcelë e rregulluar ku banorët mbjellin perime dhe lule, me çezmë dhe depo për veglat.",
+      "kategoria": "gjelberim",
+      "kostoja": 12000,
+      "pika_ne_harte": {
+        "x": 533.2,
+        "y": 528.5
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-24T09:01:00.000Z"
+    },
+    {
+      "id": "pro-hajvalia-2",
+      "lagje_id": "hajvalia",
+      "user_id": "u-qytetar",
+      "titulli": "Fushë e vogël basketbolli në lagjen Hajvalia",
+      "pershkrimi": "Fushë me sipërfaqe gome, dy kosha dhe ndriçim, e hapur për të rinjtë deri në orën 22:00.",
+      "kategoria": "sport",
+      "kostoja": 31500,
+      "pika_ne_harte": {
+        "x": 554.1,
+        "y": 543.5
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-21T10:19:00.000Z"
+    },
+    {
+      "id": "pro-hajvalia-3",
+      "lagje_id": "hajvalia",
+      "user_id": "u-qytetar",
+      "titulli": "Bibliotekë e vogël e lagjes Hajvalia",
+      "pershkrimi": "Raft librash i mbuluar dhe kënd leximi, ku banorët i huazojnë dhe i dhurojnë librat.",
+      "kategoria": "kulture",
+      "kostoja": 8000,
+      "pika_ne_harte": {
+        "x": 539.6,
+        "y": 539.2
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-07T20:29:00.000Z"
+    },
+    {
+      "id": "pro-hajvalia-4",
+      "lagje_id": "hajvalia",
+      "user_id": "u-qytetar",
+      "titulli": "Mbjellja e 100 pemëve në lagjen Hajvalia",
+      "pershkrimi": "Pemë me hije përgjatë rrugëve kryesore, me ujitje të siguruar për dy vitet e para.",
+      "kategoria": "gjelberim",
+      "kostoja": 6500,
+      "pika_ne_harte": {
+        "x": 536.1,
+        "y": 540.3
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-23T11:17:00.000Z"
+    },
+    {
+      "id": "pro-hajvalia-5",
+      "lagje_id": "hajvalia",
+      "user_id": "u-qytetar",
+      "titulli": "Shteg dhe parkim për biçikleta në lagjen Hajvalia",
+      "pershkrimi": "Shteg i shënuar për biçikleta dhe 20 vende parkimi pranë shkollës dhe tregut të lagjes.",
+      "kategoria": "infrastrukture",
+      "kostoja": 24000,
+      "pika_ne_harte": {
+        "x": 550.0,
+        "y": 535.0
+      },
+      "foto": null,
+      "statusi": "i_pranuar",
+      "krijuar": "2026-10-13T19:59:00.000Z"
+    }
+  ]
+}
